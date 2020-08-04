@@ -1,7 +1,8 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import Header from '../component/header/header-component';
+import Header from '../component/header/header.component';
+import LeftArea from '../component/left-area/left-area.component';
 import AboutPage from '../pages/about/about-page';
 import ResumePage from '../pages/resume/resume-page'; 
 import ProjectsPage from '../pages/projects/projects-page'; 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
     <Header />
+    <LeftArea />
     <Switch>
       <Route exact path='/about' component={AboutPage} />
       <Route path='/resume' component={ResumePage} />

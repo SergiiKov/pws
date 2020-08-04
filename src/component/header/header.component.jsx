@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-import './header-styles.scss';
+import './header.styles.scss';
 
 const Header = () => (
   <div className='header'>
@@ -11,7 +11,7 @@ const Header = () => (
     </Link>
     <div className='options'>
       <Link className='option' to='/about'>
-        AboutPage
+        About
       </Link>
       <Link className='option' to='/resume'>
         Resume
