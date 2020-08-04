@@ -7,12 +7,20 @@ import './header-styles.scss';
 const Header = () => (
   <div className='header'>
     <Link className='logo-container' to='/'>
-     
       <div className='logo'>Kovtun Sergii</div>
     </Link>
     <div className='options'>
+      <Link className='option' to='/about'>
+        AboutPage
+      </Link>
       <Link className='option' to='/resume'>
         Resume
+      </Link>
+      <Link className='option' to='/projects'>
+        Projects
+      </Link>
+      <Link className='option' to='/contact'>
+        Contact
       </Link>
       </div> 
  </div>

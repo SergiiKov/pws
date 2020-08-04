@@ -3,15 +3,19 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Header from '../component/header/header-component';
 import AboutPage from '../pages/about/about-page';
-import ResumePage from '../pages/resume/resume-page';  
+import ResumePage from '../pages/resume/resume-page'; 
+import ProjectsPage from '../pages/projects/projects-page'; 
+import ContactPage from '../pages/contact/contact-page';
 
 function App() {
   return (
     <div>
     <Header />
     <Switch>
-      <Route exact path='/' component={AboutPage} />
+      <Route exact path='/about' component={AboutPage} />
       <Route path='/resume' component={ResumePage} />
+      <Route path='/projects' component={ProjectsPage} />
+      <Route path='/contact' component={ContactPage} />
     </Switch>
   </div>
   );
