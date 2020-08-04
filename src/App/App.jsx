@@ -8,17 +8,25 @@ import ResumePage from '../pages/resume/resume-page';
 import ProjectsPage from '../pages/projects/projects-page'; 
 import ContactPage from '../pages/contact/contact-page';
 
+import './App.styles.scss';
+
 function App() {
   return (
-    <div>
+  <div>
     <Header />
-    <LeftArea />
-    <Switch>
-      <Route exact path='/about' component={AboutPage} />
-      <Route path='/resume' component={ResumePage} />
-      <Route path='/projects' component={ProjectsPage} />
-      <Route path='/contact' component={ContactPage} />
-    </Switch>
+    <div className='container'>
+      <div>
+        <LeftArea />
+      </div>
+      <div>
+        <Switch>
+          <Route exact path='/about' component={AboutPage} />
+          <Route path='/resume' component={ResumePage} />
+          <Route path='/projects' component={ProjectsPage} />
+          <Route path='/contact' component={ContactPage} />
+        </Switch>
+      </div>
+    </div>
   </div>
   );
 }
