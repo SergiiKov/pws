@@ -1,0 +1,21 @@
+.skills-list {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  @media (max-width: 767px) {
+  
+    .skills-list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 1360px) {
+  
+    .skills-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
