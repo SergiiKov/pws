@@ -1,13 +1,19 @@
 import React from 'react';
 
+import photoMy from '../../img/MyPhoto.jpg'; 
+
 import './left-area.styles.scss'
+
 
 const LeftArea = () => (
   <div className='left-area'>
-    Kovtun Sergii
-      sergiikovtun.vn@gmail.com
-        About
-        Hi, I'm Kovtun Sergii
+    <div>
+      < img src={photoMy} alt="Sergii Kovtun"  className='photoContainer'/>
+    </div>
+      <h3>Kovtun Sergii</h3>
+      <p>sergiikovtun.vn@gmail.com</p> 
+      <p>About</p>  
+      <p>Hi, I'm Kovtun Sergii</p> 
  </div>
       
 );
