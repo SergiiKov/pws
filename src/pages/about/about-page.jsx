@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
+
+import Table from './Table';
+import personalData from '../../component/data/stats';
 
 import './about-page.styles.scss'
 
-const AboutPage = () => (
+const AboutPage = () => {
+ 
+
+  const [data, setData] = useState(personalData);
+
+  const tick = () => {
+    const divisor = 1000 * 60 * 60 * 24 * 365.2425;
+    const birthTime = new Date('1990, 10, 13');
+    setData({
+      ...data,
+      age: {
+        label: 'Current age',
+        value: ((Date.now() - birthTime) / divisor).toFixed(11),
+      },
+    });
+  };
+
+  useEffect(() => {
+    const timer = setInterval(() => tick(), 25);
+    return () => { clearInterval(timer); };
+  }, []);
+
+  return (
 <div className='about-page'>
   <div className='title'>
     <h2>ABOUT THIS SITE</h2>
@@ -25,9 +50,10 @@ const AboutPage = () => (
       I want to try something new and ready to work hard to learn it.
     </p>
   </div>
-
+  <Table data={Object.keys(data).map((key) => data[key])} />
  </div>
+ )
       
-);
+};
 
 export default AboutPage;
