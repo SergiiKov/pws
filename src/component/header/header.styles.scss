@@ -1,4 +1,4 @@
-@import "../../App/App.styles.scss";
+@import "../sass/variables";
 
 .header {
   font-size: 1.4rem;
@@ -13,6 +13,10 @@
 
 .logo {
   height: 3.25rem;
+  margin-left: 2rem;
+}
+
+.option {
   margin-left: 2rem;
 }
   
