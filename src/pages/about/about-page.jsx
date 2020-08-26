@@ -7,7 +7,6 @@ import './about-page.styles.scss'
 
 const AboutPage = () => {
  
-
   const [data, setData] = useState(personalData);
 
   const tick = () => {
