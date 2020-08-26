@@ -1,8 +1,10 @@
+@import "../sass/variables";
+
 .left-area{
-    background-color: #00897b;
-    border: 1px solid #3f51b5;
-    margin: 20px;
-    padding: 20px;
+    background-color: $color-tertiary-light;
+    border: 1px solid $color-tertiary-dark;
+    margin: 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11,8 +13,8 @@
 .photoContainer{
     height: 30vmin;
     border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom:10px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom:1rem;
     cursor:pointer;
 }

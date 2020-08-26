@@ -2,10 +2,13 @@ import React from 'react';
 
 import './resume-page.styles.scss';
 
+import LeftArea from  '../../component/left-area/left-area.component';
 import ResumeUI from '../resume/resume-skills';
 
 const ResumePage = () => (
+      
 <div className='resume-page'>
+<LeftArea />
   <div className='title'>
     <h2>MY RESUME</h2>
     

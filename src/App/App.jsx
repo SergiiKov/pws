@@ -16,9 +16,6 @@ function App() {
     <Header />
     <div className='container'>
       <div>
-        {/* <LeftArea /> */}
-      </div>
-      <div>
         <Switch>
           <Route exact path='/about' component={AboutPage} />
           <Route path='/resume' component={ResumePage} />
