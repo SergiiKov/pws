@@ -24,3 +24,18 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #2998ff;
+  border-bottom: 1px solid #f4f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 3.25rem;
+  margin-left: 2rem;
+}
