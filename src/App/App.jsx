@@ -16,7 +16,7 @@ function App() {
     <Header />
     <div className='container'>
       <div>
-        <LeftArea />
+        {/* <LeftArea /> */}
       </div>
       <div>
         <Switch>
