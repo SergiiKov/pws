@@ -9,19 +9,28 @@ const Header = () => (
     <Link to='/'>
       <div className='logo'>Kovtun Sergii</div>
     </Link>
-    <div className='options'>
-      <Link className='option' to='/about'>
+    <div className='nav'>
+    <div className="nav__item">
+      <Link className='nav__link' to='/about'>
         About
       </Link>
-      <Link className='option' to='/resume'>
+      </div>
+      <div className="nav__item">
+      <Link className='nav__link' to='/resume'>
         Resume
       </Link>
-      <Link className='option' to='/projects'>
+      </div>
+      <div className="nav__item">
+      <Link className='nav__link' to='/projects'>
         Projects
       </Link>
-      <Link className='option' to='/contact'>
+      </div>
+      <div className='nav__item'>
+      <Link className='nav__link' to='/contact'>
         Contact
       </Link>
+      </div>
+
       </div> 
  </div>
       
