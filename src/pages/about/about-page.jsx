@@ -27,23 +27,23 @@ const AboutPage = () => {
   }, []);
 
   return (
-<div className='about-page'>
-  <div className='title'>
-    <h2>ABOUT THIS SITE</h2>
-    <h3>A beautiful, responsive, React app written with modern JavaScript and React components.</h3>
-  </div>
+  <div className='about-page'>
+    <div className='title'>
+      <h2 className='heading-secondary'>ABOUT THIS SITE</h2>
+      <h3 className='heading-tertiary' >A beautiful, responsive, React app written with modern JavaScript and React components.</h3>
+    </div>
   <div className='body'>
-      <p>
+      <p className='paragraph'>
         Welcome to my website. Please read more about me, or you can check out my resume, my projects, or contact me.
         This is react website created to introduce me and my skills in web development (and my skills in english).
       </p>
   </div>
  
   <div className='title'>
-    <h2>ABOUT ME</h2>
+    <h2 className='heading-secondary'>ABOUT ME</h2>
   </div>
   <div className='body'>
-    <p>
+    <p className='paragraph'>
       Hi, I'm Kovtun Sergii a software engineer with over four years IT industry experience, 
       that wants to evolve in the field of web development. 
       I want to try something new and ready to work hard to learn it.

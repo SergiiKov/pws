@@ -19,9 +19,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #999;
-  background-image: linear-gradient(to right bottom, #55c57a, #7ed56f);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #f7f7f7;
   min-height: 100vh;
-  margin-top: 7rem;
+  margin-top: 9rem;
 }
