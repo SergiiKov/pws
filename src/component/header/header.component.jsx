@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './header.styles.scss';
 
 const Header = () => (
-  <div className='header'>
+  <div className='header_nav'>
     <Link to='/'>
       <div className='logo'>Kovtun Sergii</div>
     </Link>

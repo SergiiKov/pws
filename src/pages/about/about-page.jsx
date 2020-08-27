@@ -27,7 +27,17 @@ const AboutPage = () => {
   }, []);
 
   return (
-  <div className='about-page'>
+    <React.Fragment>
+              <div className="header">
+            <div className="header__text-box">
+                <h1 className="heading-primary">
+                    <span className="heading-primary--main">Outdoors</span>
+                    <span className="heading-primary--sub">is where life happens</span>
+                </h1>
+            </div>
+        </div>
+
+        <div className='about-page'>
     <div className='title'>
       <h2 className='heading-secondary'>ABOUT THIS SITE</h2>
       <h3 className='heading-tertiary' >A beautiful, responsive, React app written with modern JavaScript and React components.</h3>
@@ -51,6 +61,8 @@ const AboutPage = () => {
   </div>
   <Table data={Object.keys(data).map((key) => data[key])} />
  </div>
+    </React.Fragment>
+  
  )
       
 };
