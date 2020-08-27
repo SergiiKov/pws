@@ -31,10 +31,13 @@ const AboutPage = () => {
               <div className="header">
             <div className="header__text-box">
                 <h1 className="heading-primary">
-                    <span className="heading-primary--main">Outdoors</span>
-                    <span className="heading-primary--sub">is where life happens</span>
+                    <span className="heading-primary--main">Personal site</span>
+                    <span className="heading-primary--sub">About me and my life</span>
                 </h1>
             </div>
+            <h4 className="header__heading">
+                <span className="header__heading-span header__heading-span--1">Kovtun Sergii</span>
+            </h4>
         </div>
 
         <div className='about-page'>

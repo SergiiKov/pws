@@ -37,7 +37,6 @@
   }
 
  
-  
   &__text-box {
       position: absolute;
       top: 40%;
@@ -45,6 +44,32 @@
       transform: translate(-50%, -50%);
       text-align: center;
   }
+
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+
 }
 
+&__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+        background-image: linear-gradient(to right bottom, 
+        rgba($color-secondary-light, .85), 
+        rgba($color-secondary-dark, .85));
+    }
+}
+
+}
 
