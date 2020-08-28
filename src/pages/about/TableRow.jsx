@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const TableRow = ({ label, link, value }) => (
   <tr >
     <td width="50%">{label}</td>
-    <td>{link.length ? (<a style={{color:'#3f51b5'}} href={link}>{value}</a>) : value}</td>
+    <td>{link.length ? (<a href={link}>{value}</a>) : value}</td>
   </tr>
 );
 

@@ -4,7 +4,7 @@
 @import "../../component/sass/animations";
 @import "../../component/sass/grid";
 
-.test{
+.header-bg{
     height: 100vh;
     background-image: linear-gradient(
         to right bottom,
@@ -82,7 +82,7 @@
 }
 }
 
-.title1{
+.title--1{
     margin: 2rem;
     padding: 2rem;
     background-image: linear-gradient(
@@ -97,7 +97,7 @@
   }
 }
 
-.title2{
+.title--2{
     margin: 2rem;
     padding: 2rem 2rem 2rem 2rem;
     background-image: linear-gradient(
