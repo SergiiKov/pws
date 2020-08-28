@@ -55,13 +55,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem;
 }
 .heading-primary--main {
   display: block;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
-  letter-spacing: 3.5rem;
+  letter-spacing: 3rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -312,9 +311,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 .header__text-box {
+  padding: 1rem;
   position: absolute;
-  top: 40%;
-  left: 10%;
+  top: 50%;
+  left: 16%;
   transform: translate(-50%, -50%);
   text-align: center;
   background-image: linear-gradient(to right bottom, rgba(245, 245, 245, 0.2), rgba(238, 238, 238, 0.2));

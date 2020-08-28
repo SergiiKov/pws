@@ -65,6 +65,7 @@ const AboutPage = () => {
                       <span className="heading-primary--sub">About me and my life</span>
                   </h1>
               </div>
+              <Table data={Object.keys(data).map((key) => data[key])} />
               <h4 className="header__heading">
                   <span className="header__heading-span header__heading-span--1">Kovtun Sergii</span>
               </h4>
@@ -77,7 +78,6 @@ const AboutPage = () => {
 
       </div>
 
- <Table data={Object.keys(data).map((key) => data[key])} />
  <div className="row">
                     <div className="col-1-of-3">
  <div className="card">

@@ -8,13 +8,13 @@
     text-transform: uppercase;
 
     backface-visibility: hidden;
-    margin-bottom: 6rem;
+    // margin-bottom: 6rem;
 
     &--main {
         display: block;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 400;
-        letter-spacing: 3.5rem;
+        letter-spacing: 3rem;
     
         animation-name: moveInLeft;
         animation-duration: 1s;
