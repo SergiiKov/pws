@@ -12,7 +12,7 @@
 
     &--main {
         display: block;
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
     
@@ -41,11 +41,11 @@
 }
 
 .heading-secondary {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
@@ -69,10 +69,12 @@
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+    color: $color-grey-light-1;
 }
 
 .paragraph {
     font-size: $default-font-size;
+    color: $color-grey-light-1;
 
     &:not(:last-child) {
         margin-bottom: 3rem;

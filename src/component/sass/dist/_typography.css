@@ -59,7 +59,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .heading-primary--main {
   display: block;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
   animation-name: moveInLeft;
@@ -86,11 +86,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #ffa726, #f4511e);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -115,10 +115,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
+  color: #f5f5f5;
 }
 
 .paragraph {
   font-size: 1.6rem;
+  color: #f5f5f5;
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
