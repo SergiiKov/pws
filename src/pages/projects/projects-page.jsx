@@ -1,16 +1,24 @@
 import React from 'react';
 import '../projects/projects-page.styles.scss'; 
-
+import LeftArea from  '../../component/left-area/left-area.component';
 
 const ProjectPage = () => {
 
   return (
   <React.Fragment>
     <div className='projects-page'>
-  <div>
+    <div className="row-full">
+
+<div className="col-1-of-3">
+<LeftArea />
+</div>
+
+<div className="col-2-of-3">
+<h2 className='heading-secondary'>MY PROJECTS</h2>
+  <div className='projects-block'>
      <div>
-      <h2>MY PROJECTS</h2>
-    <h3>Todo List</h3>
+     
+    <h3 className='heading-tertiary'>Todo List</h3>
     <a href='https://github.com/SergiiKov/My-ToDo-List' target="_blank" rel="noopener noreferrer">
                     <div className='project-card-container'>
                         <img src={require(`../../img/todolist.png`)} alt='todolist' className='img-projects' />
@@ -24,9 +32,9 @@ const ProjectPage = () => {
      </div>
    </div>
 
-         <div >
-     <div>
-    <h3>Robot-page</h3>
+         <div className='projects-block' >
+     <div >
+    <h3 className='heading-tertiary'>Robot-page</h3>
     <a href='https://github.com/SergiiKov/cards-friends' target="_blank" rel="noopener noreferrer">
                     <div className='project-card-container'>
                         <img src={require(`../../img/robot-friends.png`)} alt='robot-friends' className='img-projects' />
@@ -40,9 +48,9 @@ const ProjectPage = () => {
      </div>
    </div>
 
-   <div >
+   <div className='projects-block' >
      <div>
-    <h3>VN Create</h3>
+    <h3 className='heading-tertiary'>VN Create</h3>
     <a href='https://github.com/SergiiKov/vncreate' target="_blank" rel="noopener noreferrer">
                     <div className='project-card-container'>
                         <img src={require(`../../img/vncreate-1.png`)} alt='VN Create' className='img-projects' />
@@ -55,9 +63,9 @@ const ProjectPage = () => {
      </div>
    </div>
 
-  <div >
+  <div className='projects-block' >
      <div>
-    <h3>Smp.vin.ua</h3>
+    <h3 className='heading-tertiary'>Smp.vin.ua</h3>
     <a href='http://smp.vin.ua/joomla/' target="_blank" rel="noopener noreferrer">
      <div className='project-card-container'>
                         <img src={require(`../../img/smp.png`)} alt='smp.vin.ua' className='img-projects' />
@@ -71,9 +79,9 @@ const ProjectPage = () => {
      </div>
    </div>
 
-   <div className='project-card-container'>
+   <div className='projects-block'>
      <div>
-    <h3>Main-page iac</h3>
+    <h3 className='heading-tertiary'>Main-page iac</h3>
     <a href='http://smp.vin.ua/joomla/' target="_blank" rel="noopener noreferrer">
     <div className='project-card-container'>
                         <img src={require(`../../img/main-page.png`)} alt='main-page iac' className='img-projects' />
@@ -86,7 +94,8 @@ const ProjectPage = () => {
                     </a>        
      </div>
    </div>
-
+   </div>
+   </div>
    </div>
   </React.Fragment>
 );
