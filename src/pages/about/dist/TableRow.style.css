@@ -126,8 +126,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .d-link {
-  font-size: 1rem;
-  color: #66bb6a;
+  font-size: 1.2rem;
+  color: #283593;
 }
 
 /*
@@ -189,8 +189,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 2rem 1rem 0 1rem;
   font-size: 1.2rem;
   position: absolute;
-  top: 20%;
-  left: 80%;
+  top: 10%;
+  left: 84%;
   transform: translate(-50%, -50%);
   text-align: center;
   background-image: linear-gradient(to right bottom, rgba(245, 245, 245, 0.2), rgba(238, 238, 238, 0.2));

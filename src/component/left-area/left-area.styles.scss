@@ -1,13 +1,24 @@
 @import "../sass/variables";
 
 .left-area{
-    background-color: $color-tertiary-light;
-    border: 1px solid $color-tertiary-dark;
+
+
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 1),
+      rgba($color-primary-dark, 1));
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 70%, 70% 100%, 0 100%);
+      clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 70%, 70% 100%, 0 100%);
+      height: 80vh;
+  }
     margin: 2rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    color: $color-white;
 }
 
 .photoContainer{

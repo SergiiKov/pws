@@ -1,0 +1,31 @@
+@import "../../component/sass/variables";
+@import "../../component/sass/typography";
+@import "../../component/sass/mixins";
+@import "../../component/sass/animations";
+@import "../../component/sass/grid";
+
+.resume-page{
+    margin-top: 9rem;
+}
+
+
+.resume-block{
+padding: 2rem;
+color: white;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 1),
+        rgba($color-primary-dark, 1));
+  
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+        clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+
+    }
+
+}
+
+.resume-margin{
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
