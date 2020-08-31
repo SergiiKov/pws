@@ -117,12 +117,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #f5f5f5;
 }
 
 .paragraph {
   font-size: 1.6rem;
-  color: #f5f5f5;
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
@@ -390,27 +388,29 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .title--1 {
+  color: #fff;
   margin: 2rem;
   padding: 2rem;
   background-image: linear-gradient(to right bottom, #29b6f6, #283593);
 }
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
   .title--1 {
-    -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 70%, 70% 100%, 0 100%);
-    clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 70%, 70% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 80%, 80% 100%, 0 100%);
+    clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 80%, 80% 100%, 0 100%);
     height: 40vh;
   }
 }
 
 .title--2 {
+  color: #fff;
   margin: 2rem;
   padding: 2rem 2rem 2rem 2rem;
   background-image: linear-gradient(to right bottom, #29b6f6, #283593);
 }
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
   .title--2 {
-    -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 70%, 70% 100%, 0 100%);
-    clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 70%, 70% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 80%, 80% 100%, 0 100%);
+    clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 80%, 80% 100%, 0 100%);
     height: 40vh;
   }
 }

@@ -10,7 +10,7 @@ import '../resume/resume-skills.styles.scss';
 
 
   const ButtonCategory = ({ setCategory, category }) => (  
-        <button className={'button-filter'} onClick={() => setCategory(category)}>
+        <button className={'button-filter button-filter--color'} onClick={() => setCategory(category)}>
          {category}
         </button>
   );
@@ -30,7 +30,7 @@ import '../resume/resume-skills.styles.scss';
     return(
         <div className='cardMargin'>
         
-      <h3>Skills</h3>
+      <h3 className='heading-tertiary'>Skills</h3>
         <div className='buttons-container'>
           {ButtonCategories(productCategories, setCategory )}
         </div>
