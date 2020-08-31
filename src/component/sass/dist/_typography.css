@@ -124,3 +124,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
 }
+
+.d-link {
+  font-size: 1.2rem;
+  color: #283593;
+}

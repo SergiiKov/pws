@@ -6,7 +6,6 @@
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
-
     backface-visibility: hidden;
     // margin-bottom: 6rem;
 
@@ -79,4 +78,9 @@
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
+
+.d-link{
+    font-size: 1.2rem;
+    color:$color-primary-dark;
 }

@@ -125,6 +125,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-bottom: 3rem;
 }
 
+.d-link {
+  font-size: 1rem;
+  color: #66bb6a;
+}
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -179,10 +184,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 .tablebox-box {
-  color: #333;
-  width: 18rem;
+  color: #283593;
+  width: 20rem;
   padding: 2rem 1rem 0 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: absolute;
   top: 20%;
   left: 80%;
