@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 105.83333 52.916668"
+   height="200"
+   width="400">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     id="layer1">
+    <rect
+       y="0.13415343"
+       x="0.13415343"
+       height="52.648361"
+       width="105.56503"
+       id="rect833"
+       style="fill:none;stroke:#00635f;stroke-width:0.268307" />
+    <rect
+       y="0.13229847"
+       x="0.13229847"
+       height="52.652069"
+       width="105.56874"
+       id="rect914"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.264597;stroke-opacity:1" />
+  </g>
+  <g
+     style="display:inline"
+     id="layer5">
+    <text
+       transform="scale(0.59434381,1.6825278)"
+       id="text901"
+       y="28.557541"
+       x="5.6285272"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2994px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.551552"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.551552"
+         y="28.557541"
+         x="5.6285272"
+         id="tspan899">KOVTUN</tspan></text>
+  </g>
+  <g
+     style="display:inline"
+     id="layer6">
+    <a
+       style="stroke:none"
+       transform="matrix(0.64244898,0,0,0.96508764,16.905638,-0.24498416)"
+       id="a906">
+      <rect
+         style="fill:#ffffff;stroke:none;stroke-width:0.261174"
+         id="rect904"
+         width="102.15485"
+         height="13.707736"
+         x="2.4301085"
+         y="20.815451" />
+    </a>
+  </g>
+  <g
+     id="layer7">
+    <text
+       transform="scale(1.0999026,0.90917143)"
+       id="text912"
+       y="34.917633"
+       x="17.980541"
+       style="font-size:15.9794px;line-height:1.25;font-family:sans-serif;fill:none;stroke:#000000;stroke-width:0.249677;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:none;stroke:#000000;stroke-width:0.249677;stroke-opacity:1"
+         y="34.917633"
+         x="17.980541"
+         id="tspan910">SERGII</tspan></text>
+  </g>
+</svg>

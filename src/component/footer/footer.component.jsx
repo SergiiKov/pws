@@ -1,18 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../../img/t.svg';
+import logo from '../../img/logo.svg';
 
 import './footer.styles.scss'
 
 
 const Footer = () => (
     <footer className="footer">
-    <div className="footer__logo-box">
-    <img src={logo} alt="Logo" className="footer__logo" />
-    </div>
-    <div className="row">
-        <div className="col-1-of-2">
+         <div className="row">
+
+        <div className="col-1-of-3">
             <div className="footer__navigation">
                 <div className="footer__list">
                     <Link className='footer__link' to='/about'>
@@ -44,7 +42,12 @@ const Footer = () => (
                 </ul> */}
             </div>
         </div>
-        <div className="col-1-of-2">
+        <div className="col-1-of-3">
+    <div className="footer__logo-box">
+    <img src={logo} alt="Logo" className="footer__logo" />
+    </div>
+</div>
+        <div className="col-1-of-3">
             <p className="footer__copyright">
                 Built by <a href="#" className="footer__link">Kovtun Sergii</a> for his online course <a href="#" className="footer__link">for test</a>.
                 Copyright &copy; by Kovtun Sergii.

@@ -26,10 +26,7 @@
   z-index: 2000;
 }
 
-.logo {
-  height: 3.25rem;
-  margin-left: 2rem;
-}
+
 
 .option {
   margin-left: 2rem;
@@ -90,4 +87,17 @@
       align-items: center;
   }
 
+}
+
+.logo-container{
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+// padding: 2rem;
+}
+
+.logo {
+  // width: rem;
+  height: 5rem; 
+  
 }
