@@ -22,13 +22,21 @@ margin: 1rem;
           text-decoration: none;
           padding: 1.5rem 4rem;
           display: inline-block;
-          border-radius: 1rem;
+        //   border-radius: 1rem;
+        border: 1px solid $color-secondary-dark;
+ 
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+            clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+    
+        }
+
           transition: all .2s;
           position: relative;
           font-size: $default-font-size;
   
           //Change for the <button> element
-          border: none;
+        //   border: none;
           cursor: pointer;
       }
       
@@ -56,7 +64,7 @@ margin: 1rem;
           color: $color-white;
   
           &::after {
-              background-color: $color-secondary-light;
+              background-color: $color-secondary-dark;
           }
       }
       
@@ -65,7 +73,7 @@ margin: 1rem;
           display: inline-block;
           height: 100%;
           width: 100%;
-          border-radius: 10rem;
+        //   border-radius: 10rem;
           position: absolute;
           top: 0;
           left: 0;

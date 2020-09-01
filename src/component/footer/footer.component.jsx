@@ -1,24 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import logo from '../../img/t.svg';
+
 import './footer.styles.scss'
 
 
 const Footer = () => (
-    <footer class="footer">
-    <div class="footer__logo-box">
-
-        {/* <picture class="footer__logo">
-            <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
-                    media="(max-width: 37.5em)">
-            <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
-        </picture> */}
-
+    <footer className="footer">
+    <div className="footer__logo-box">
+    <img src={logo} alt="Logo" className="footer__logo" />
     </div>
-    <div class="row">
-        <div class="col-1-of-2">
-            <div class="footer__navigation">
-                <div class="footer__list">
+    <div className="row">
+        <div className="col-1-of-2">
+            <div className="footer__navigation">
+                <div className="footer__list">
                     <Link className='footer__link' to='/about'>
                         About
                     </Link>
@@ -48,9 +44,9 @@ const Footer = () => (
                 </ul> */}
             </div>
         </div>
-        <div class="col-1-of-2">
-            <p class="footer__copyright">
-                Built by <a href="#" class="footer__link">Kovtun Sergii</a> for his online course <a href="#" class="footer__link">for test</a>.
+        <div className="col-1-of-2">
+            <p className="footer__copyright">
+                Built by <a href="#" className="footer__link">Kovtun Sergii</a> for his online course <a href="#" className="footer__link">for test</a>.
                 Copyright &copy; by Kovtun Sergii.
             </p>
         </div>
