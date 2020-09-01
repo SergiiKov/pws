@@ -30,7 +30,7 @@ import '../resume/resume-skills.styles.scss';
     return(
         <div className='cardMargin'>
         
-      <h3 className='heading-tertiary'>Skills</h3>
+      <h3 className='heading-secondary'>Skills</h3>
         <div className='buttons-container'>
           {ButtonCategories(productCategories, setCategory )}
         </div>
