@@ -7,6 +7,7 @@ import AboutPage from '../pages/about/about-page';
 import ResumePage from '../pages/resume/resume-page'; 
 import ProjectsPage from '../pages/projects/projects-page'; 
 import ContactPage from '../pages/contact/contact-page';
+import Footer from '../component/footer/footer.component';
 
 import './App.styles.scss';
 
@@ -24,6 +25,7 @@ function App() {
         </Switch>
       </div>
     </div>
+    <Footer />
   </div>
   );
 }
