@@ -1,44 +1,8 @@
-@import "../sass/variables";
-
-.left-area{
-
-    // border: 1px solid $color-primary;
-    background-image: linear-gradient(
-      to right bottom,
-      rgba($color-secondary-light, 1),
-      rgba($color-secondary-dark, 1));
-
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-      -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
-      clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
-      height: 80vh;
-  }
-    margin: 2rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: $color-white;
-    // color:$color-grey-dark-3;
-}
-
-.photoContainer{
-    height: 30vmin;
-    border-radius: 50%;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-bottom:1rem;
-    cursor:pointer;
-}
-
-.text-container{
-
-
-}
-
-.button-container{
-    display: flex;
-}
+@import "../../component/sass/variables";
+@import "../../component/sass/typography";
+@import "../../component/sass/mixins";
+@import "../../component/sass/animations";
+@import "../../component/sass/grid";
 
 .button{
     &,
@@ -47,7 +11,7 @@
       margin: 1rem;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1rem 2rem;
+        padding: 1.5rem 4rem;
         display: inline-block;
       //   border-radius: 1rem;
       border: 1px solid $color-secondary-dark;
