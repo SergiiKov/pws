@@ -7,7 +7,6 @@ import cvEn from '../../img/cv_en.pdf';
 
 import './left-area.styles.scss'
 
-
 const LeftArea = () => (
   <div className='left-area'>
     <div>

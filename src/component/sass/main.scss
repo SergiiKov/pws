@@ -1,4 +1,8 @@
-@import "../component/sass/variables";
+@import './animations';
+@import './grid';
+@import './mixins';
+@import './typography';
+@import './variables';
 
 * {
     margin: 0;

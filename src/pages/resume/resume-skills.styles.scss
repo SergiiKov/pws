@@ -1,12 +1,8 @@
-@import "../../component/sass/variables";
-@import "../../component/sass/typography";
-@import "../../component/sass/mixins";
-@import "../../component/sass/animations";
-@import "../../component/sass/grid";
+@import "../../component/sass/main.scss";
 
-    .cardMargin{
-margin: 1rem;
-    }
+.cardMargin{
+  margin: 1rem;
+  }
 
     .buttons-container{
       margin: 1rem;

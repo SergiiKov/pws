@@ -9,7 +9,7 @@ import ProjectsPage from '../pages/projects/projects-page';
 import ContactPage from '../pages/contact/contact-page';
 import Footer from '../component/footer/footer.component';
 
-import './App.styles.scss';
+import '../component/sass/main.scss';
 
 function App() {
   return (
