@@ -150,6 +150,16 @@
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
 
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-secondary-dark);
+            }
+
+
+
         }
     }
   
@@ -172,19 +182,19 @@
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         
-        // &--1 {
-        //     background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-        //     url(../img/nat-5.jpg);
-        // }
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+            url(../../img/t3.jpg);
+        }
 
-        // &--2 {
-        //     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
-        //     url(../img/nat-6.jpg);
-        // }
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+            url(../../img/t2.jpg);
+        }
 
         &--3 {
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-            url(../../img/my.jpg);
+            url(../../img/t1.jpg);
         }
     }
 
@@ -271,10 +281,6 @@
         font-weight: 100;
     }
 
-
-
-
-
     //@include respond(tab-port) {
     @media only screen and (max-width: 56.25em),
             only screen and (hover: none) {
@@ -299,7 +305,6 @@
             transform: rotateY(0);
         }
 
-    
         &__details {
             padding: 1rem 3rem;
         }
