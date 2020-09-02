@@ -2,15 +2,16 @@
 
 .left-area{
 
-    // border: 1px solid $color-primary;
-    background-image: linear-gradient(
-      to right bottom,
-      rgba($color-secondary-light, 1),
-      rgba($color-secondary-dark, 1));
 
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-      -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
-      clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+     border: 1px solid $color-primary;
+    // background-image: linear-gradient(
+    //   to right bottom,
+    //   rgba($color-secondary-light, 1),
+    //   rgba($color-secondary-dark, 1));
+
+      @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
+        clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
       height: 80vh;
   }
     margin: 2rem;
@@ -21,13 +22,25 @@
     color: $color-white;
     // color:$color-grey-dark-3;
 }
-
-
-
+.test{
+    //  margin:1rem;
+    
+     padding: 2rem;
+    background-color: rgba($color-grey-dark, .3);
+    // transform: skewX(-12deg);
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
+        clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);}
+        height: 80vh;
+        width: 100%;
+}
 .text-container{
-
+    color: $color-grey-dark-3;
+    // transform: skewX(12deg);
 
 }
+
+
 
 .button-container{
     display: flex;
@@ -42,7 +55,7 @@
         text-decoration: none;
         padding: 1rem 2rem;
         display: inline-block;
-      //   border-radius: 1rem;
+        color: $color-grey-dark-3;
       border: 1px solid $color-secondary-dark;
 
       @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -58,7 +71,7 @@
     }
     
     &:hover {
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        box-shadow: 0 1rem 2rem rgba($color-black,.4);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -70,26 +83,16 @@
     &:focus {
         outline: none;
         // transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.4);
         background-color: $color-secondary-light;
     }
 
 
-    &--color {
-        background-color: $color-secondary-dark;
-        color: $color-white;
-
-        &::after {
-            background-color: $color-secondary-dark;
-        }
-    }
-    
     &::after {
         content: "";
         display: inline-block;
         height: 100%;
         width: 100%;
-      //   border-radius: 10rem;
         position: absolute;
         top: 0;
         left: 0;
@@ -97,15 +100,13 @@
         transition: all .4s;
     }
     
-    &--animated {
-        animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
-    }
+
 
   }
 
   .left-img-container{
 position: relative;
+
   }
 
   .left-img-name {
@@ -124,15 +125,13 @@ position: relative;
 
 .left-img{
     height: 30vmin;
-    // height: 100%;
     border-radius: 50%;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-bottom:1rem;
+    margin: 1rem;
     cursor:pointer;
     transform:  scale(1);
     backface-visibility: hidden;
     transition: all .5s;
+    box-shadow: 0 1rem 2rem rgba($color-black,.4);
 }
 
 .left-img-container:hover .left-img-name {

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666665 8.4666669"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2">
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient1052">
+      <stop
+         id="stop1050"
+         offset="0"
+         style="stop-color:#fcf9ff;stop-opacity:1;" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     id="layer2" />
+  <g
+     transform="matrix(0.97420299,0,0,1.0847747,0.1242649,-0.30051772)"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.2463px;line-height:1.25;font-family:'Britannic Bold';-inkscape-font-specification:'Britannic Bold, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.206158"
+       x="0.027793722"
+       y="6.2259831"
+       id="text835"
+       transform="scale(0.83308701,1.2003548)"><tspan
+         id="tspan833"
+         x="0.027793722"
+         y="6.2259831"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Britannic Bold';-inkscape-font-specification:'Britannic Bold, ';stroke-width:0.206158"><tspan
+           id="tspan2995"
+           style="fill:#4285f4;fill-opacity:1">K</tspan><tspan
+           id="tspan2999"
+           style="fill:#ff8800;fill-opacity:1">S</tspan></tspan></text>
+  </g>
+</svg>
