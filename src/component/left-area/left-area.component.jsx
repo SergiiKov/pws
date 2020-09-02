@@ -9,8 +9,9 @@ import './left-area.styles.scss'
 
 const LeftArea = () => (
   <div className='left-area'>
-    <div>
-      < img src={photoMy} alt="Sergii Kovtun"  className='photoContainer'/>
+    <div className='left-img-container'>
+      < img src={photoMy} alt="Sergii Kovtun"  className='left-img'/>
+      <figcaption className="left-img-name">Kovtun Sergii</figcaption>
     </div>
     <div className="text-container">
       <h3 className='heading-tertiary'>Kovtun Sergii</h3>
