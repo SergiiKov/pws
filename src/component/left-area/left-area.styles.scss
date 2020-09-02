@@ -12,7 +12,7 @@
       @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
         -webkit-clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
         clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
-      height: 80vh;
+      height: auto;
   }
     margin: 2rem;
     padding: 2rem;
@@ -73,18 +73,14 @@
     }
     
     &:hover {
+        color: $color-tertiary-dark;
         box-shadow: 0 1rem 2rem rgba($color-black,.4);
-
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
+        
     }
     
     &:active,
     &:focus {
         outline: none;
-        // transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,.4);
         background-color: $color-secondary-light;
     }
@@ -129,6 +125,7 @@
         cursor: pointer;
     }
  
+ 
     &:active,
     &:focus {
         outline: none;
@@ -146,7 +143,7 @@ position: relative;
   .left-img-name {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 35%;
     transform: translate(-50%, 20%);
     color: $color-white;
     text-transform: uppercase;

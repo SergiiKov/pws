@@ -36,12 +36,13 @@ const ResumePage = () => (
 
       <div className="resume-block resume-margin">
       <h3 className='heading-tertiary'>Professional Skills</h3>
-      <p className='paragraph'>
-      Knowledge of: HTML, CSS, JS, ReactJS, Bootstrap, Material-UI
-      Basic Knowledge of: PHP, MySql, Firebase
-      Understanding: NPM, Webpack, Gulp, Git, GitHub, Adobe Photoshop
-      Knowledge of CMS Wordpress, Joomla
-      Knowledge of English on the Pre-Intermediate level (Read/Write)</p>
+      <ul className='list'>
+        <li className='list-li'>Knowledge of: HTML, CSS, JS, ReactJS, Bootstrap, Material-UI</li>
+        <li className='list-li'>Basic Knowledge of: PHP, MySql, Firebase</li>
+        <li className='list-li'>Understanding: NPM, Webpack, Gulp, Git, GitHub, Adobe Photoshop</li>
+        <li className='list-li'>Basic Knowledge of CMS Wordpress, Joomla</li>
+        <li>Knowledge of English on the Pre-Intermediate level (Read/Write)</li>
+      </ul>
       </div>
  
   <ResumeUI />

@@ -28,3 +28,12 @@ border: 1px solid $color-primary;
     margin-bottom: 2rem;
     margin-right: 2rem;
 }
+
+.list{
+    list-style: none;
+    font-size: $default-font-size;
+}
+
+.list-li{
+    margin-bottom: 1rem;    
+}

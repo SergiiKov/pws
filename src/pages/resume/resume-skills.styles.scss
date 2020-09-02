@@ -6,7 +6,6 @@
 
     .buttons-container{
       margin: 1rem;
-
     }
 
     .button-filter{
@@ -16,16 +15,15 @@
         margin: 1rem;
           text-transform: uppercase;
           text-decoration: none;
-          padding: 1.5rem 4rem;
+          padding: 1.5rem 3rem;
           display: inline-block;
-        //   border-radius: 1rem;
-        border: 1px solid $color-secondary-dark;
- 
-        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-            -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
-            clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+          // color: $color-grey-dark-3;
+          border: 1px solid $color-secondary-dark;
     
-        }
+          @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+              -webkit-clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0 100%);
+              clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0 100%);
+          }
 
           transition: all .2s;
           position: relative;
@@ -36,16 +34,6 @@
           cursor: pointer;
       }
       
-      &:hover {
-          // transform: translateY(-1px);
-          box-shadow: 0 1rem 2rem rgba($color-black,.2);
-  
-          &::after {
-              transform: scaleX(1.4) scaleY(1.6);
-              opacity: 0;
-          }
-      }
-      
       &:active,
       &:focus {
           outline: none;
@@ -54,32 +42,17 @@
           background-color: $color-secondary-light;
       }
   
-  
       &--color {
-          background-color: $color-secondary-dark;
-          color: $color-white;
+        &:hover {
+          color: $color-tertiary-dark;
+          box-shadow: 0 1rem 2rem rgba($color-black,.4);
+          
+      }
   
           &::after {
               background-color: $color-secondary-dark;
           }
       }
       
-      &::after {
-          content: "";
-          display: inline-block;
-          height: 100%;
-          width: 100%;
-        //   border-radius: 10rem;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: -1;
-          transition: all .4s;
-      }
-      
-      &--animated {
-          animation: moveInBottom .5s ease-out .75s;
-          animation-fill-mode: backwards;
-      }
 
     }
