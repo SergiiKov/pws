@@ -22,7 +22,7 @@
     color: $color-white;
     // color:$color-grey-dark-3;
 }
-.test{
+.bg-container{
     //  margin:1rem;
     
      padding: 2rem;
@@ -45,6 +45,8 @@
 .button-container{
     display: flex;
 }
+
+
 
 .button{
     &,
@@ -100,7 +102,39 @@
         transition: all .4s;
     }
     
+  }
 
+  .icon{
+    &,
+    &:link,
+    &:visited {
+      margin: .5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .6rem 1.2rem;
+      
+        display: inline-block;
+        color: $color-grey-dark-3;
+      border: 1px solid $color-secondary-dark;
+
+      @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+          -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+          clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+  
+      }
+
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+        cursor: pointer;
+    }
+ 
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: 0 .5rem 1rem rgba($color-black,.4);
+        background-color: $color-secondary-light;
+    }
 
   }
 
