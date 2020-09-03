@@ -2,12 +2,19 @@ import React, { useState, useEffect }  from 'react';
 
 import Table from './Table';
 import personalData from '../../component/data/stats';
-import img1 from '../../img/khb/1.jpg'; 
-import img2 from '../../img/khb/2.jpg'; 
-import img3 from '../../img/khb/3.jpg'; 
-import img4 from '../../img/khb/4.jpg'; 
-import img5 from '../../img/khb/5.jpg'; 
-import img6 from '../../img/khb/6.jpg'; 
+import khb_img1 from '../../img/khb/1.jpg'; 
+import khb_img2 from '../../img/khb/2.jpg'; 
+import khb_img3 from '../../img/khb/3.jpg'; 
+import khb_img4 from '../../img/khb/4.jpg'; 
+import khb_img5 from '../../img/khb/5.jpg'; 
+import khb_img6 from '../../img/khb/6.jpg'; 
+
+import vv_img1 from '../../img/vv/1.jpg'; 
+import vv_img2 from '../../img/vv/2.jpg'; 
+import vv_img3 from '../../img/vv/3.jpg'; 
+import vv_img4 from '../../img/vv/4.jpg'; 
+import vv_img5 from '../../img/vv/5.jpg'; 
+import vv_img6 from '../../img/vv/6.jpg'; 
 
 import './about-page.styles.scss'
 
@@ -38,17 +45,19 @@ const AboutPage = () => {
         <div className="header-bg">
           <div className="col-1-of-2">
             <div className='about-page'>
-              <div className='title--1'>
-                  <h2 className='heading-secondary'>ABOUT THIS SITE</h2>
-                  <h3 className='heading-tertiary' >A beautiful, responsive, React app written with modern JavaScript and React components.</h3>
-              
-                <div className='body'>
-                  <p className='paragraph'>
-                    Welcome to my website. Please read more about me, or you can check out my resume, my projects, or contact me.
-                    This is react website created to introduce me and my skills in web development (and my skills in english).
-                  </p>
+              <div className="border-title">
+                <div className='title--1'>
+                    <h2 className='heading-secondary'>ABOUT THIS SITE</h2>
+                    <h3 className='heading-tertiary' >A beautiful, responsive, React app written with modern JavaScript and React components.</h3>
+                  <div className='body'>
+                    <p className='paragraph'>
+                      Welcome to my website. Please read more about me, or you can check out my resume, my projects, or contact me.
+                      This is react website created to introduce me and my skills in web development (and my skills in english).
+                    </p>
+                  </div>
                 </div>
               </div>
+          <div className="border-title">
             <div className='title--2'>
                 <h2 className='heading-secondary'>ABOUT ME</h2>
                   <div className='body'>
@@ -60,9 +69,10 @@ const AboutPage = () => {
                   </div>
             </div>
           </div>
+          </div>
         </div>
           <div className="col-1-of-2">
-            <div className="">
+            <div className="border-title">
               <div className="header">
                   <div className="header__text-box">
                       <h1 className="heading-primary">
@@ -92,24 +102,39 @@ const AboutPage = () => {
            &nbsp;
         </div>
          <h4 className="card__heading">
-           <span className="card__heading-span card__heading-span--1">Summer trip</span>
+           <span className="card__heading-span card__heading-span--1">Spring trip</span>
           </h4>
            <div className="card__details">
                                     <ul>
                                         <li>Vinnytsia region</li>
                                         <li>Pivdennyy Buh</li>
-                                        <li>villages near Vinnytsia</li>     
+                                        <li>Villages near Vinnytsia</li>     
                                     </ul>
                                 </div>
                            </div>
-                           <div className="card__side card__side--back card__side--back-1">
-                                <div className="card__cta">
-                                    <div className="card__price-box">
-                                        <p className="card__price-only">Photo</p>
-                                        <p className="card__price-value">Travel</p>
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
-                                </div>
+                           <div className="card__side card__side--back card__side--back-1">       
+                           <div className="card__cta">
+    <div className="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src={vv_img1} alt="Gallery image 1" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src={vv_img2} alt="Gallery image 2" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src={vv_img3} alt="Gallery image 3" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src={vv_img4} alt="Gallery image 4" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img src={vv_img5} alt="Gallery image 5" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img src={vv_img6} alt="Gallery image 6" class="gallery__img" />
+        </figure>
+    </div>             
+                           </div>
                             </div>
                        </div>
                        </div>
@@ -120,11 +145,11 @@ const AboutPage = () => {
         &nbsp;
         </div>
          <h4 className="card__heading">
-           <span className="card__heading-span card__heading-span--2">Spring travel</span>
+           <span className="card__heading-span card__heading-span--2">Summer travel</span>
           </h4>
            <div className="card__details">
                                     <ul>
-                                    <li>29-30 08 2020</li>
+                                    {/* <li>29-30 08 2020</li> */}
                                         <li>Kamianets-Podilskyi</li>
                                         <li>Khotyn Fortress</li>
                                         <li>Bakota, Dniester</li>     
@@ -135,29 +160,26 @@ const AboutPage = () => {
                                 <div className="card__cta">
     <div className="gallery">
         <figure class="gallery__item gallery__item--1">
-          <img src={img1} alt="Gallery image 1" class="gallery__img" />
+          <img src={khb_img1} alt="Gallery image 1" class="gallery__img" />
         </figure>
         <figure class="gallery__item gallery__item--2">
-          <img src={img2} alt="Gallery image 2" class="gallery__img" />
+          <img src={khb_img2} alt="Gallery image 2" class="gallery__img" />
         </figure>
         <figure class="gallery__item gallery__item--3">
-          <img src={img3} alt="Gallery image 3" class="gallery__img" />
+          <img src={khb_img3} alt="Gallery image 3" class="gallery__img" />
         </figure>
         <figure class="gallery__item gallery__item--4">
-          <img src={img4} alt="Gallery image 4" class="gallery__img" />
+          <img src={khb_img4} alt="Gallery image 4" class="gallery__img" />
         </figure>
 
         <figure class="gallery__item gallery__item--5">
-          <img src={img5} alt="Gallery image 5" class="gallery__img" />
+          <img src={khb_img5} alt="Gallery image 5" class="gallery__img" />
         </figure>
         <figure class="gallery__item gallery__item--6">
-          <img src={img6} alt="Gallery image 6" class="gallery__img" />
+          <img src={khb_img6} alt="Gallery image 6" class="gallery__img" />
         </figure>
-    </div>
-
-                          
+    </div>             
                            </div>
-
                             </div>
                        </div>
                        </div>
