@@ -6,9 +6,10 @@ import img1 from '../../img/khb/1.jpg';
 import img2 from '../../img/khb/2.jpg'; 
 import img3 from '../../img/khb/3.jpg'; 
 import img4 from '../../img/khb/4.jpg'; 
+import img5 from '../../img/khb/5.jpg'; 
+import img6 from '../../img/khb/6.jpg'; 
 
 import './about-page.styles.scss'
-import { queryAllByAltText } from '@testing-library/react';
 
 const AboutPage = () => {
  
@@ -91,14 +92,13 @@ const AboutPage = () => {
            &nbsp;
         </div>
          <h4 className="card__heading">
-           <span className="card__heading-span card__heading-span--1">Summer travel</span>
+           <span className="card__heading-span card__heading-span--1">Summer trip</span>
           </h4>
            <div className="card__details">
                                     <ul>
-                                        <li>29-30 08 2020</li>
-                                        <li>Kamianets-Podilskyi</li>
-                                        <li>Khotyn Fortress</li>
-                                        <li>Bakota, Dniester</li>        
+                                        <li>Vinnytsia region</li>
+                                        <li>Pivdennyy Buh</li>
+                                        <li>villages near Vinnytsia</li>     
                                     </ul>
                                 </div>
                            </div>
@@ -120,53 +120,40 @@ const AboutPage = () => {
         &nbsp;
         </div>
          <h4 className="card__heading">
-           <span className="card__heading-span card__heading-span--2">Spring trip</span>
+           <span className="card__heading-span card__heading-span--2">Spring travel</span>
           </h4>
            <div className="card__details">
                                     <ul>
-                                        <li>3 day tours</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tour guides</li>
-                                        <li>Sleep in cozy hotels</li>
-                                        <li>Difficulty: easy</li>
+                                    <li>29-30 08 2020</li>
+                                        <li>Kamianets-Podilskyi</li>
+                                        <li>Khotyn Fortress</li>
+                                        <li>Bakota, Dniester</li>     
                                     </ul>
                                 </div>
                            </div>
                            <div className="card__side card__side--back card__side--back-2">
                                 <div className="card__cta">
-                                    {/* <div className="card__price-box">
-                                        <p className="card__price-only">Photo</p>
-                                        <p className="card__price-value">Travel</p>
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a> */}
-<div className="gallery">
-{/* < img src={photoMy} alt="Sergii Kovtun"  className=''/> */}
-  <figure class="gallery__item gallery__item--1">
-    <img src={img1} alt="Gallery image 1" class="gallery__img" />
-  </figure>
-  <figure class="gallery__item gallery__item--2">
-    <img src={img2} alt="Gallery image 1" class="gallery__img" />
-  </figure>
-  <figure class="gallery__item gallery__item--3">
-    <img src={img3} alt="Gallery image 1" class="gallery__img" />
-  </figure>
-  <figure class="gallery__item gallery__item--4">
-    <img src={img4} alt="Gallery image 1" class="gallery__img" />
-  </figure>
+    <div className="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src={img1} alt="Gallery image 1" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src={img2} alt="Gallery image 2" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src={img3} alt="Gallery image 3" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src={img4} alt="Gallery image 4" class="gallery__img" />
+        </figure>
 
-  <figure class="gallery__item gallery__item--5">
-    <img src={img1} alt="Gallery image 1" class="gallery__img" />
-  </figure>
-  <figure class="gallery__item gallery__item--6">
-    <img src={img2} alt="Gallery image 1" class="gallery__img" />
-  </figure>
-  <figure class="gallery__item gallery__item--7">
-    <img src={img3} alt="Gallery image 1" class="gallery__img" />
-  </figure>
-  <figure class="gallery__item gallery__item--8">
-    <img src={img4} alt="Gallery image 1" class="gallery__img" />
-  </figure>
-</div>
+        <figure class="gallery__item gallery__item--5">
+          <img src={img5} alt="Gallery image 5" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img src={img6} alt="Gallery image 6" class="gallery__img" />
+        </figure>
+    </div>
 
                           
                            </div>
