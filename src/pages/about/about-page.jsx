@@ -2,6 +2,7 @@ import React, { useState, useEffect }  from 'react';
 
 import Table from './Table';
 import personalData from '../../component/data/stats';
+import photoMy from '../../img/MyPhoto.jpg'; 
 
 import './about-page.styles.scss'
 
@@ -86,15 +87,14 @@ const AboutPage = () => {
            &nbsp;
         </div>
          <h4 className="card__heading">
-           <span className="card__heading-span card__heading-span--1">Kamianets-Podilskyi</span>
+           <span className="card__heading-span card__heading-span--1">Summer travel</span>
           </h4>
            <div className="card__details">
                                     <ul>
-                                        <li>3 day tours</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tour guides</li>
-                                        <li>Sleep in cozy hotels</li>
-                                        <li>Difficulty: easy</li>
+                                        <li>29-30 08 2020</li>
+                                        <li>Kamianets-Podilskyi</li>
+                                        <li>Khotyn Fortress</li>
+                                        <li>Bakota, Dniester</li>        
                                     </ul>
                                 </div>
                            </div>
@@ -113,10 +113,10 @@ const AboutPage = () => {
                        <div className="card">
       <div className="card__side card__side--front">
         <div className="card__picture card__picture--2">
-           &nbsp;
+        &nbsp;
         </div>
          <h4 className="card__heading">
-           <span className="card__heading-span card__heading-span--1">The Sea Explorer</span>
+           <span className="card__heading-span card__heading-span--2">Spring trip</span>
           </h4>
            <div className="card__details">
                                     <ul>
@@ -130,11 +130,12 @@ const AboutPage = () => {
                            </div>
                            <div className="card__side card__side--back card__side--back-2">
                                 <div className="card__cta">
-                                    <div className="card__price-box">
+                                    {/* <div className="card__price-box">
                                         <p className="card__price-only">Photo</p>
                                         <p className="card__price-value">Travel</p>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a> */}
+                           < img src={photoMy} alt="Sergii Kovtun"  className='test'/>
                                 </div>
                             </div>
                        </div>
@@ -146,7 +147,7 @@ const AboutPage = () => {
            &nbsp;
         </div>
          <h4 className="card__heading">
-           <span className="card__heading-span card__heading-span--1">The Sea Explorer</span>
+           <span className="card__heading-span card__heading-span--3">Autumn Travel</span>
           </h4>
            <div className="card__details">
                                     <ul>
