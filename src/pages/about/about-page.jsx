@@ -2,9 +2,13 @@ import React, { useState, useEffect }  from 'react';
 
 import Table from './Table';
 import personalData from '../../component/data/stats';
-import photoMy from '../../img/MyPhoto.jpg'; 
+import img1 from '../../img/khb/1.jpg'; 
+import img2 from '../../img/khb/2.jpg'; 
+import img3 from '../../img/khb/3.jpg'; 
+import img4 from '../../img/khb/4.jpg'; 
 
 import './about-page.styles.scss'
+import { queryAllByAltText } from '@testing-library/react';
 
 const AboutPage = () => {
  
@@ -135,8 +139,38 @@ const AboutPage = () => {
                                         <p className="card__price-value">Travel</p>
                                     </div>
                                     <a href="#popup" class="btn btn--white">Book now!</a> */}
-                           < img src={photoMy} alt="Sergii Kovtun"  className='test'/>
-                                </div>
+<div className="gallery">
+{/* < img src={photoMy} alt="Sergii Kovtun"  className=''/> */}
+  <figure class="gallery__item gallery__item--1">
+    <img src={img1} alt="Gallery image 1" class="gallery__img" />
+  </figure>
+  <figure class="gallery__item gallery__item--2">
+    <img src={img2} alt="Gallery image 1" class="gallery__img" />
+  </figure>
+  <figure class="gallery__item gallery__item--3">
+    <img src={img3} alt="Gallery image 1" class="gallery__img" />
+  </figure>
+  <figure class="gallery__item gallery__item--4">
+    <img src={img4} alt="Gallery image 1" class="gallery__img" />
+  </figure>
+
+  <figure class="gallery__item gallery__item--5">
+    <img src={img1} alt="Gallery image 1" class="gallery__img" />
+  </figure>
+  <figure class="gallery__item gallery__item--6">
+    <img src={img2} alt="Gallery image 1" class="gallery__img" />
+  </figure>
+  <figure class="gallery__item gallery__item--7">
+    <img src={img3} alt="Gallery image 1" class="gallery__img" />
+  </figure>
+  <figure class="gallery__item gallery__item--8">
+    <img src={img4} alt="Gallery image 1" class="gallery__img" />
+  </figure>
+</div>
+
+                          
+                           </div>
+
                             </div>
                        </div>
                        </div>
