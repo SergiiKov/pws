@@ -73,7 +73,11 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
+        <div class="u-center-text u-margin-bottom-medium">
+                    <h2 class="heading-secondary">
+                    Some of my travels
+                    </h2>
+        </div>
 <div className="row m-b-2">
   <div className="col-1-of-3">
     <div className="card">
@@ -82,7 +86,7 @@ const AboutPage = () => {
            &nbsp;
         </div>
          <h4 className="card__heading">
-           <span className="card__heading-span card__heading-span--1">The Sea Explorer</span>
+           <span className="card__heading-span card__heading-span--1">Kamianets-Podilskyi</span>
           </h4>
            <div className="card__details">
                                     <ul>
