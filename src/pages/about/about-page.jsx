@@ -16,6 +16,13 @@ import vv_img4 from '../../img/vv/4.jpg';
 import vv_img5 from '../../img/vv/5.jpg'; 
 import vv_img6 from '../../img/vv/6.jpg'; 
 
+import karp_img1 from '../../img/karp/1.jpg'; 
+import karp_img2 from '../../img/karp/2.jpg'; 
+import karp_img3 from '../../img/karp/3.jpg'; 
+import karp_img4 from '../../img/karp/4.jpg'; 
+import karp_img5 from '../../img/karp/5.jpg'; 
+import karp_img6 from '../../img/karp/6.jpg'; 
+
 import './about-page.styles.scss'
 
 const AboutPage = () => {
@@ -194,21 +201,36 @@ const AboutPage = () => {
           </h4>
            <div className="card__details">
                                     <ul>
-                                        <li>3 day tours</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tour guides</li>
-                                        <li>Sleep in cozy hotels</li>
-                                        <li>Difficulty: easy</li>
+                                        <li>Karpaty</li>
+                                        <li>Dzembronya, Pip Ivan</li>
+                                        <li>Yaremche, Hoverla</li>
+                                        <li>Ivano-Frankivsk</li>
                                     </ul>
                                 </div>
                            </div>
                            <div className="card__side card__side--back card__side--back-3">
                                 <div className="card__cta">
-                                    <div className="card__price-box">
-                                        <p className="card__price-only">Photo</p>
-                                        <p className="card__price-value">Travel</p>
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
+                                <div className="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src={karp_img1} alt="Gallery image 1" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src={karp_img2} alt="Gallery image 2" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src={karp_img3} alt="Gallery image 3" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src={karp_img4} alt="Gallery image 4" class="gallery__img" />
+        </figure>
+
+        <figure class="gallery__item gallery__item--5">
+          <img src={karp_img5} alt="Gallery image 5" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img src={karp_img6} alt="Gallery image 6" class="gallery__img" />
+        </figure>
+    </div>     
                                 </div>
                             </div>
                        </div>

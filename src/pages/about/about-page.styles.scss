@@ -150,7 +150,8 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            background-color: $color-white;
+            // background-color: $color-white;
+            background-color: $color-grey-light-1;
         }
 
         &--back {
@@ -205,8 +206,11 @@
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-            url(../../img/t1.jpg);
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-tertiary-light, .8),
+                rgba($color-tertiary-dark, .8)), 
+            url(../../img/karp/2.jpg);
         }
     }
 
