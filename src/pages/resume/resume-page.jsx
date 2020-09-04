@@ -6,8 +6,11 @@ import LeftArea from  '../../component/left-area/left-area.component';
 import ResumeUI from '../resume/resume-skills';
 
 const ResumePage = () => (
-      
+    
+
+   
 <div className='resume-page'>
+<div className="test11">
 <div className="row-full">
 
       <div className="col-1-of-3">
@@ -49,7 +52,7 @@ const ResumePage = () => (
       </div>
  </div>
  </div>
-      
+ </div>    
 );
 
 export default ResumePage;
