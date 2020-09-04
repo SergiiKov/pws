@@ -17,7 +17,7 @@ const ResumePage = () => (
       <LeftArea />
       </div>
 <div className="col-2-of-3">
-  <div className='title'>
+  <div className='title u-margin-bottom-small'>
     <h2 className='heading-secondary'>MY RESUME</h2>
   </div>
 

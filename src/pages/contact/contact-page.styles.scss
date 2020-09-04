@@ -1,9 +1,9 @@
 @import "../../component/sass/main.scss";
 
 .contact-page{
-    margin-top: 9rem;
-    
+    margin-top: 9rem; 
 }
+
 .form-container{
     margin-right: 10rem;
     padding: 2rem;
@@ -14,10 +14,9 @@
             -webkit-clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
             clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
     
-        }
-  
-    
+        }   
 }
+
 .form {
     &__group:not(:last-child) {
         margin-bottom: 2rem;
@@ -31,7 +30,7 @@
         border-radius: 2px;
         background-color: rgba($color-white, .5);
         border: none;
-        border-bottom: 3px solid transparent;
+        border-bottom: 1px solid $color-secondary-light;
         width: 90%;
         display: block;
         transition: all .3s;
@@ -41,20 +40,20 @@
         }
 
         &:focus {
-            outline: none;
-            box-shadow: 0 1rem 2rem rgba($color-black, .1);
-            border-bottom: 3px solid $color-primary;
+            outline: none !important;
+            border-bottom:1px solid $color-secondary-dark;
+            box-shadow: 0 .5rem 1rem rgba($color-black,.4);
         }
 
         &:focus:invalid {
-            border-bottom: 3px solid $color-secondary-dark;
+            color: $color-secondary-dark;
+            // border-bottom: 3px solid $color-secondary-dark;
         }
 
         &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
         }
     }
-
 
     &__label {
         font-size: 1.2rem;
@@ -70,7 +69,21 @@
         visibility: hidden;
         transform: translateY(-4rem);
     }
+}
 
+.text_area{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: $color-grey-dark-3;
+    border:1px solid $color-secondary-light;
+    padding: 1.5rem 2rem;
+
+  &:focus
+   {
+      outline: none !important;
+      border:1px solid $color-secondary-dark;
+      box-shadow: 0 .5rem 1rem rgba($color-black,.4);
+  }
 }
 
 .button{
@@ -120,3 +133,6 @@
         }
     } 
   }
+
+
+

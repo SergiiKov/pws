@@ -14,7 +14,7 @@ const ProjectPage = () => {
 </div>
 
 <div className="col-2-of-3">
-<h2 className='heading-secondary'>MY PROJECTS</h2>
+<h2 className='heading-secondary u-margin-bottom-small'>MY PROJECTS</h2>
   <div className='projects-block'>
      <div>
      

@@ -133,9 +133,11 @@ import './contact-page.styles.scss'
         </div>  
         <div className="form__group">
         <textarea id="textarea" 
+        className='text_area'
         name="textarea" 
+        placeholder="Enter Message" 
         rows="6" 
-        cols="100"
+        cols="77"
         id='message' 
         value={message} 
         onChange={(event)=> setMessage(event.target.value)} />
