@@ -134,14 +134,14 @@ import './contact-page.styles.scss'
         <div className="form__group">
         <textarea id="textarea" 
         name="textarea" 
-        rows="10" 
-        cols="30"
+        rows="6" 
+        cols="100"
         id='message' 
         value={message} 
         onChange={(event)=> setMessage(event.target.value)} />
         </div>  
         <div class="form__group">
-          <button class="btn btn--green" onClick={onConfirm}>Send Message</button>
+          <button class="button" onClick={onConfirm}>Send Message</button>
         </div>
       </div>
     </div>

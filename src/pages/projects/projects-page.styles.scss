@@ -1,6 +1,5 @@
 @import "../../component/sass/main.scss";
 
-
 .projects-page{
     background-color: $color-grey-light-1;
     margin-top: 9rem;
@@ -11,7 +10,6 @@
     height: 100%;
     background-size: cover;
     background-position: center; 
-  
     }
 
     .projects-block{
@@ -20,16 +18,11 @@
         padding: 2rem;
         color:$color-secondary-dark;
         text-align: center;
-        border: 1px solid $color-secondary-dark;
-            // background-image: linear-gradient(
-            //     to right bottom,
-            //     rgba($color-primary-light, 1),
-            //     rgba($color-primary-dark, 1));
+        border: 1px solid $color-secondary-light;
           
             @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
                 -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
                 clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
         
             }
-        
-        }
+    }
