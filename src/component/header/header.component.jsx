@@ -16,7 +16,7 @@ const Header = () => (
 
     <div className='nav'>
     <div className="nav__item">
-      <Link className='nav__link' to='/'>
+      <Link className='nav__link' to='/about'>
         About
       </Link>
       </div>
