@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg1439"
+   version="1.1"
+   viewBox="0 0 105.83333 52.916668"
+   height="200"
+   width="400">
+  <defs
+     id="defs1433" />
+  <metadata
+     id="metadata1436">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       y="0.13813409"
+       x="0.13813409"
+       height="52.6404"
+       width="105.55706"
+       id="rect1441"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.276268" />
+    <text
+       transform="scale(0.60254267,1.6596335)"
+       id="text1445"
+       y="28.951511"
+       x="3.266649"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.7863px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.55916"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.55916"
+         y="28.951511"
+         x="3.266649"
+         id="tspan1443">KOVTUN</tspan></text>
+    <rect
+       y="19.84375"
+       x="18.520834"
+       height="13.229167"
+       width="66.145836"
+       id="rect1447"
+       style="fill:#ffffff;stroke:none;stroke-width:0.297218" />
+    <text
+       transform="scale(1.1376087,0.87903684)"
+       id="text2012"
+       y="35.893059"
+       x="16.39917"
+       style="font-size:15.9594px;line-height:1.25;font-family:sans-serif;stroke-width:0.249365"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.249365"
+         y="35.893059"
+         x="16.39917"
+         id="tspan2010">SERGII</tspan></text>
+  </g>
+</svg>
