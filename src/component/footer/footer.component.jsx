@@ -13,7 +13,7 @@ const Footer = () => (
         <div className="col-1-of-3">
             <div className="footer__navigation">
                 <div className="footer__list">
-                    <Link className='footer__link' to='/about'>
+                    <Link className='footer__link' to='/'>
                         About
                     </Link>
                          

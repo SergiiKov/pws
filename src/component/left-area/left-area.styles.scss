@@ -1,6 +1,9 @@
 @import "../sass/main";
 
 .left-area{
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
      border: 1px solid $color-primary;
 
       @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {

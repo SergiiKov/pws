@@ -1,13 +1,10 @@
 @import "../sass/main";
 
 .header_nav {
-  // font-size: 1.4rem;
   height: 7rem;
   width: 100%;
   position: fixed;
   top:0;
-
-  // background-color: #f4f2f2;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-primary-light, 1),
@@ -50,8 +47,8 @@
       background-color: $color-secondary-dark;
       transform: scaleY(0);
       transition: transform .2s,
-                  width .4s cubic-bezier(1,0,0,1) .2s,
-                  background-color .1s;
+      width .4s cubic-bezier(1,0,0,1) .2s,
+      background-color .1s;
   }
 
   &__item:hover::before,
@@ -77,7 +74,6 @@
       display: flex;
       align-items: center;
   }
-
 }
 
 .logo-container{

@@ -24,6 +24,7 @@
     &__logo {
         width: 20rem;
         height: auto;
+        box-shadow: 0 .5rem .5rem rgba($color-black, .4);
     }
 
     &__navigation {
@@ -54,7 +55,6 @@
     &__link {
         &:link,
         &:visited {
-            // margin: 1rem;
             padding: .5rem;
             color: $color-grey-light-1;
             background-color: $color-grey-dark-3;

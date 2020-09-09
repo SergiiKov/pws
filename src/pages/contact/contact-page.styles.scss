@@ -13,8 +13,10 @@
         @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
             -webkit-clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
             clip-path: polygon(0% 5%, 5% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
-    
         }   
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
 }
 
 .form {
