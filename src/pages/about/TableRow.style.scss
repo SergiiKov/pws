@@ -2,6 +2,10 @@
 
 
 .tablebox-box {
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
     color:$color-primary-dark;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;

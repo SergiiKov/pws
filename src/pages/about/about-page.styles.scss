@@ -4,14 +4,13 @@
     height: 95vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8));
+        rgba($color-primary-light, .7),
+        rgba($color-primary-dark, .7));
         margin-top: -1rem;
         
 .header {
     position: relative;
     margin: 2rem;
-  height: 80vh;
   background-image: 
   url(../../img/my.jpg);
   background-size: cover;
@@ -39,7 +38,7 @@
   }
 
   &__text-box {
-     padding: 1rem;
+      padding: 1rem;
       position: absolute;
       top: 40%;
       left: 14%;
@@ -47,8 +46,8 @@
       text-align: center;
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-grey-light-1, .2),
-        rgba($color-grey-light-2, .2));
+        rgba($color-grey-dark, .3),
+        rgba($color-grey-dark-3, .3));
         writing-mode:vertical-rl;
         @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
             -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 85%, 85% 100%, 0 100%);
