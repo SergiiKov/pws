@@ -26,8 +26,8 @@ const LeftArea = () => (
     </div>
  
       <div className="button-container">
-        <div><a className='button' href={cvEn} target="_blank">resume</a></div>
-        <div><a className='button' href={cvUa} target="_blank">резюме</a></div>
+        <div><a className='button-left' href={cvEn} target="_blank">resume</a></div>
+        <div><a className='button-left' href={cvUa} target="_blank">резюме</a></div>
       </div>
 
       <div className="text-container">

@@ -9,50 +9,49 @@
     }
 
     .button-filter{
-      &,
-      &:link,
-      &:visited {
-        margin: 1rem;
-          text-transform: uppercase;
-          text-decoration: none;
-          padding: 1.5rem 3rem;
-          display: inline-block;
-          // color: $color-grey-dark-3;
+        &,
+        &:link,
+        &:visited {
+          margin: 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            display: inline-block;
+            color: $color-secondary-dark;
           border: 1px solid $color-secondary-dark;
     
           @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-              -webkit-clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0 100%);
-              clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0 100%);
+              -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+              clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
           }
-
-          transition: all .2s;
-          position: relative;
-          font-size: $default-font-size;
-  
-          //Change for the <button> element
-        //   border: none;
-          cursor: pointer;
-      }
-      
-      &:active,
-      &:focus {
-          outline: none;
-          // transform: translateY(-1px);
-          box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-          background-color: $color-secondary-light;
-      }
-  
-      &--color {
+    
+            transition: all .3s;
+            position: relative;
+            font-size: $default-font-size;
+            cursor: pointer;
+        }
+        
         &:hover {
-          color: $color-tertiary-dark;
-          box-shadow: 0 1rem 2rem rgba($color-black,.4);
-          
-      }
-  
-          &::after {
-              background-color: $color-secondary-dark;
-          }
-      }
-      
-
+            border: none;
+            color: $color-white;
+            background-color: $color-secondary-light;
+            box-shadow: 0 1rem 2rem rgba($color-black,.4);
+            @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+                -webkit-clip-path: none;
+                clip-path: none;
+            }  
+        }
+        
+        &:active,
+        &:focus {
+            border: none;
+            outline: none;
+            color: $color-tertiary-dark;
+            box-shadow: 0 .5rem 1rem rgba($color-black,.4);
+            background-color: $color-secondary-light;
+            @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+                -webkit-clip-path: none;
+                clip-path: none;
+            }
+        } 
     }
