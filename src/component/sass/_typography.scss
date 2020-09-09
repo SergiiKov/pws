@@ -5,13 +5,11 @@
 
 .heading-primary {
     color: $color-white;
-    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: transparent; 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $color-white;
     backface-visibility: hidden;
     text-transform: uppercase;
-
-    // margin-bottom: 6rem;
 
     &--main {
         display: block;
@@ -44,7 +42,7 @@
 }
 
 .heading-secondary {
-    // text-align: center;
+    display: inline-block;
     padding-left: 2.5rem;
     padding-bottom: .6rem;
     font-size: 2.8rem;
@@ -115,7 +113,6 @@
       .style-mail__link:hover, .style-mail__link:active {
         color: #55c57a;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-        // transform:  scale(1.05); 
     }
 
 .m-b-1{

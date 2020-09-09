@@ -53,7 +53,7 @@ const AboutPage = () => {
           <div className="col-1-of-2">
             <div className='about-page'>
               <div className="border-title">
-                <div className='title--1'>
+                <div className='title'>
                     <h2 className='heading-secondary'>ABOUT THIS SITE</h2>
                     <h3 className='heading-tertiary' >A beautiful, responsive, React app written with modern JavaScript and React components.</h3>
                   <div className='body'>
@@ -65,7 +65,7 @@ const AboutPage = () => {
                 </div>
               </div>
           <div className="border-title">
-            <div className='title--2'>
+            <div className='title'>
                 <h2 className='heading-secondary'>ABOUT ME</h2>
                   <div className='body'>
                     <p className='paragraph'>
@@ -156,7 +156,6 @@ const AboutPage = () => {
           </h4>
            <div className="card__details">
                                     <ul>
-                                    {/* <li>29-30 08 2020</li> */}
                                         <li>Kamianets-Podilskyi</li>
                                         <li>Khotyn Fortress</li>
                                         <li>Bakota, Dniester</li>     
