@@ -1,6 +1,4 @@
-@import "./variables";
-@import "./mixins";
-@import "./animations";
+@import "./main.scss";
 
 
 .heading-primary {
@@ -21,11 +19,13 @@
         animation-duration: 1s;
         animation-timing-function: ease-out;
         
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+    
         @include respond(phone) {
-            letter-spacing: 1rem;
-             font-family: 5rem;
-         }
-       
+            font-size: 2.5rem;
+        } 
     }
     
     &--sub {
