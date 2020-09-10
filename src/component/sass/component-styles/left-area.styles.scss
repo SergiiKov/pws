@@ -15,7 +15,7 @@
     padding: 2rem;
     color: $color-white;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       margin: .5rem;
       padding: .5rem;
   }
@@ -33,7 +33,7 @@
 .text-container{
     color: $color-grey-dark-3;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     text-align: center;
   }
 }
@@ -43,7 +43,7 @@
     flex-direction: row;
     justify-content: start;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       justify-content: center;
     }
 
@@ -151,7 +151,7 @@
   position: relative;
   display: inline-block;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     display: flex;
     justify-content: center;
 }
@@ -182,7 +182,7 @@
     transition: all .5s;
     box-shadow: 0 1rem 2rem rgba($color-black,.4);
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       height: 40vmin;
       border-radius: 50%;
       margin: 1rem;
