@@ -1,7 +1,5 @@
 import React from 'react';
-import SkillCard from '../skill-card/skill-card.component';
-
-import './skills-list.styles.scss'
+import SkillCard from './skill-card.component';
 
 const SkillsList = ({ state: { skills, displayCategory } }) => {
   return(

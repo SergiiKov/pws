@@ -4,8 +4,6 @@ import Table from '../../component/table/Table';
 import personalData from '../../component/data/stats';
 import Card from '../../component/card/card-component';
 
-import './about-page.styles.scss';
-
 const AboutPage = () => {
  
   const [data, setData] = useState(personalData);

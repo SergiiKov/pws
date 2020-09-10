@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Scroll from '../../component/scroll/scroll.component';
-import SkillsList from '../../component/skills-list/skills-list.component';
+import SkillsList from './skills-list.component';
 import { skills } from '../../component/data/skills';
 
   const ButtonCategory = ({ setCategory, category }) => (  

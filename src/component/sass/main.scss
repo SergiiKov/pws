@@ -11,12 +11,15 @@
 @import './component-styles/left-area.styles.scss';
 @import './component-styles/resume-skills.styles.scss';
 @import './component-styles/table-row.styles.scss';
-// @import './component-styles/card-component.styles.scss';
+@import './component-styles/card-component.styles.scss';
+@import './component-styles/skill-card.styles.scss';
+@import './component-styles/skills-list.styles.scss';
+@import './component-styles/scroll.styles.scss';
 
 @import './pages-styles/contact-page.styles.scss';
 @import './pages-styles/resume-page.styles.scss';
 @import './pages-styles/projects-page.styles.scss';
-// @import './pages-styles/about-page.styles.scss';
+@import './pages-styles/about-page.styles.scss';
 
 
 * {
