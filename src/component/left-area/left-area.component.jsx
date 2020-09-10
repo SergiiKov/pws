@@ -19,9 +19,9 @@ const LeftArea = () => (
     </div>
   
     <div className="text-container">
-      <h3 className='heading-tertiary'>Hi, I'm Kovtun Sergii!</h3>
+      <h3 className='heading-tertiary'>Hi! I'm Kovtun Sergii</h3>
       <a className='style-mail__link' href="mailto:sergiikovtun.vn@gmail.com">My Email: sergiikovtun.vn@gmail.com</a>
-      <p className='paragraph'>Download or read my resume</p> 
+      <p className='paragraph-left'>Download or read my resume</p> 
     </div>
  
       <div className="button-container">
@@ -30,7 +30,7 @@ const LeftArea = () => (
       </div>
 
       <div className="text-container">
-        <p className='paragraph'>Social</p> 
+        <p className='paragraph-left'>Social</p> 
       </div>
       <div className="button-container">
         <div  className=''>

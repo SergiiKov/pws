@@ -6,7 +6,7 @@
     color: $color-grey-light-1;
 
     @include respond(tab-port) {
-        padding: 8rem 0;
+        padding: 2rem 0;
     }
     
 
@@ -15,7 +15,7 @@
         margin-bottom: 4rem;
 
         @include respond(tab-port) {
-            margin-bottom: 6rem;
+            margin-bottom: 1rem;
         }
     }
 
@@ -77,6 +77,7 @@
         float: right;
 
         @include respond(tab-port) {
+            padding: 1rem 2rem;
             width: 100%;
             float: none;
         }
