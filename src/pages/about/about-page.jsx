@@ -75,8 +75,8 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-        <div class="u-center-text u-margin-bottom-medium">
-                    <h2 class="heading-secondary">
+        <div className="u-center-text u-margin-bottom-medium">
+                    <h2 className="heading-secondary">
                     Some of my travels
                     </h2>
         </div>

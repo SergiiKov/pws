@@ -47,23 +47,23 @@ const Card = () => {
                            <div className="card__side card__side--back card__side--back-1">       
                            <div className="card__cta">
     <div className="gallery">
-        <figure class="gallery__item gallery__item--1">
-          <img src={vv_img1} alt="Gallery Vinnytsia" class="gallery__img" />
+        <figure className="gallery__item gallery__item--1">
+          <img src={vv_img1} alt="Gallery Vinnytsia" className="gallery__img" />
         </figure>
-        <figure class="gallery__item gallery__item--2">
-          <img src={vv_img2} alt="Gallery Vinnytsia" class="gallery__img" />
+        <figure className="gallery__item gallery__item--2">
+          <img src={vv_img2} alt="Gallery Vinnytsia" className="gallery__img" />
         </figure>
-        <figure class="gallery__item gallery__item--3">
-          <img src={vv_img3} alt="Gallery Vinnytsia" class="gallery__img" />
+        <figure className="gallery__item gallery__item--3">
+          <img src={vv_img3} alt="Gallery Vinnytsia" className="gallery__img" />
         </figure>
-        <figure class="gallery__item gallery__item--4">
-          <img src={vv_img4} alt="Gallery Vinnytsia" class="gallery__img" />
+        <figure className="gallery__item gallery__item--4">
+          <img src={vv_img4} alt="Gallery Vinnytsia" className="gallery__img" />
         </figure>
-        <figure class="gallery__item gallery__item--5">
-          <img src={vv_img5} alt="Gallery Vinnytsia" class="gallery__img" />
+        <figure className="gallery__item gallery__item--5">
+          <img src={vv_img5} alt="Gallery Vinnytsia" className="gallery__img" />
         </figure>
-        <figure class="gallery__item gallery__item--6">
-          <img src={vv_img6} alt="Gallery Vinnytsia" class="gallery__img" />
+        <figure className="gallery__item gallery__item--6">
+          <img src={vv_img6} alt="Gallery Vinnytsia" className="gallery__img" />
         </figure>
     </div>             
                            </div>
@@ -90,24 +90,24 @@ const Card = () => {
                            <div className="card__side card__side--back card__side--back-2">
                                 <div className="card__cta">
     <div className="gallery">
-        <figure class="gallery__item gallery__item--1">
-          <img src={khb_img1} alt="Gallery Summer travel" class="gallery__img" />
+        <figure className="gallery__item gallery__item--1">
+          <img src={khb_img1} alt="Gallery Summer travel" className="gallery__img" />
         </figure>
-        <figure class="gallery__item gallery__item--2">
-          <img src={khb_img2} alt="Gallery Summer travel" class="gallery__img" />
+        <figure className="gallery__item gallery__item--2">
+          <img src={khb_img2} alt="Gallery Summer travel" className="gallery__img" />
         </figure>
-        <figure class="gallery__item gallery__item--3">
-          <img src={khb_img3} alt="Gallery Summer travel" class="gallery__img" />
+        <figure className="gallery__item gallery__item--3">
+          <img src={khb_img3} alt="Gallery Summer travel" className="gallery__img" />
         </figure>
-        <figure class="gallery__item gallery__item--4">
-          <img src={khb_img4} alt="Gallery Summer travel" class="gallery__img" />
+        <figure className="gallery__item gallery__item--4">
+          <img src={khb_img4} alt="Gallery Summer travel" className="gallery__img" />
         </figure>
 
-        <figure class="gallery__item gallery__item--5">
-          <img src={khb_img5} alt="Gallery Summer travel" class="gallery__img" />
+        <figure className="gallery__item gallery__item--5">
+          <img src={khb_img5} alt="Gallery Summer travel" className="gallery__img" />
         </figure>
-        <figure class="gallery__item gallery__item--6">
-          <img src={khb_img6} alt="Gallery Summer travel" class="gallery__img" />
+        <figure className="gallery__item gallery__item--6">
+          <img src={khb_img6} alt="Gallery Summer travel" className="gallery__img" />
         </figure>
     </div>             
                            </div>
@@ -135,23 +135,23 @@ const Card = () => {
         <div className="card__side card__side--back card__side--back-3">
             <div className="card__cta">
                 <div className="gallery">
-                    <figure class="gallery__item gallery__item--1">
-                    <img src={karp_img1} alt="Gallery Karpaty" class="gallery__img" />
+                    <figure className="gallery__item gallery__item--1">
+                    <img src={karp_img1} alt="Gallery Karpaty" className="gallery__img" />
                     </figure>
-                    <figure class="gallery__item gallery__item--2">
-                    <img src={karp_img2} alt="Gallery Karpaty" class="gallery__img" />
+                    <figure className="gallery__item gallery__item--2">
+                    <img src={karp_img2} alt="Gallery Karpaty" className="gallery__img" />
                     </figure>
-                    <figure class="gallery__item gallery__item--3">
-                    <img src={karp_img3} alt="Gallery Karpaty" class="gallery__img" />
+                    <figure className="gallery__item gallery__item--3">
+                    <img src={karp_img3} alt="Gallery Karpaty" className="gallery__img" />
                     </figure>
-                    <figure class="gallery__item gallery__item--4">
-                    <img src={karp_img4} alt="Gallery Karpaty" class="gallery__img" />
+                    <figure className="gallery__item gallery__item--4">
+                    <img src={karp_img4} alt="Gallery Karpaty" className="gallery__img" />
                     </figure>
-                    <figure class="gallery__item gallery__item--5">
-                    <img src={karp_img5} alt="Gallery Karpaty" class="gallery__img" />
+                    <figure className="gallery__item gallery__item--5">
+                    <img src={karp_img5} alt="Gallery Karpaty" className="gallery__img" />
                     </figure>
-                    <figure class="gallery__item gallery__item--6">
-                    <img src={karp_img6} alt="Gallery Karpaty" class="gallery__img" />
+                    <figure className="gallery__item gallery__item--6">
+                    <img src={karp_img6} alt="Gallery Karpaty" className="gallery__img" />
                     </figure>
                 </div>     
             </div>
