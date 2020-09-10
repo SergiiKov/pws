@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import TableRow from './TableRow';
 
-import './TableRow.style.scss';
-
 const Table = ({ data }) => (
   <table>
     <tbody className='tablebox-box'>

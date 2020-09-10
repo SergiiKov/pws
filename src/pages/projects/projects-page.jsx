@@ -1,5 +1,5 @@
 import React from 'react';
-import '../projects/projects-page.styles.scss'; 
+
 import LeftArea from  '../../component/left-area/left-area.component';
 
 const ProjectPage = () => {

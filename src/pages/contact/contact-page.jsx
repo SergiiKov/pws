@@ -4,9 +4,6 @@ import axios from 'axios';
 
 import LeftArea from  '../../component/left-area/left-area.component';
 
-import './contact-page.styles.scss'
-
-
   export default function ContactPage() {
 
     const [name, setName] = useState('');

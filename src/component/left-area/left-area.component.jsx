@@ -5,7 +5,6 @@ import photoMy from '../../img/MyPhoto.jpg';
 import cvUa from '../../img/cv_ua.pdf';
 import cvEn from '../../img/cv_en.pdf';
 
-// import './left-area.styles.scss'
 import facebook from '../../img/facebook2.svg';
 import github from '../../img/github.svg';
 import linkedin from '../../img/linkedin.svg';

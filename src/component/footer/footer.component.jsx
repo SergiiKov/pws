@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 
 import logo_big from '../../img/logo-big.png';
 
-import './footer.styles.scss'
-
-
 const Footer = () => (
     <footer className="footer">
          <div className="row">

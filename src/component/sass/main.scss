@@ -5,8 +5,18 @@
 @import './utilities';
 @import './variables';
 
-@import './pages-styles/header.styles';
-@import './pages-styles/left-area.styles';
+
+@import './component-styles/footer.styles.scss';
+@import './component-styles/header.styles.scss';
+@import './component-styles/left-area.styles.scss';
+@import './component-styles/resume-skills.styles.scss';
+@import './component-styles/table-row.styles.scss';
+// @import './component-styles/card-component.styles.scss';
+
+@import './pages-styles/contact-page.styles.scss';
+@import './pages-styles/resume-page.styles.scss';
+@import './pages-styles/projects-page.styles.scss';
+// @import './pages-styles/about-page.styles.scss';
 
 
 * {

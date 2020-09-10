@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 import logo from '../../img/logo.png';
 
-// import './header.styles.scss';
-
 const Header = () => (
   <div className='header_nav'>
     <div className="logo-container">

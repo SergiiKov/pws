@@ -1,13 +1,8 @@
 import React from 'react';
 
-
 import Scroll from '../../component/scroll/scroll.component';
 import SkillsList from '../../component/skills-list/skills-list.component';
 import { skills } from '../../component/data/skills';
-
-import '../resume/resume-skills.styles.scss';
-
-
 
   const ButtonCategory = ({ setCategory, category }) => (  
         <button className={'button-filter button-filter--color'} onClick={() => setCategory(category)}>

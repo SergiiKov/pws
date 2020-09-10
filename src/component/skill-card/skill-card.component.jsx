@@ -2,6 +2,7 @@ import React from 'react';
 
 import './skill-card.styles.scss'
 
+
 const SkillCard = (props) =>{
     const { name, percent, id, href } = props;
     return(

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './card-component.styles.scss'
+
 import khb_img1 from '../../img/khb/1.jpg'; 
 import khb_img2 from '../../img/khb/2.jpg'; 
 import khb_img3 from '../../img/khb/3.jpg'; 
