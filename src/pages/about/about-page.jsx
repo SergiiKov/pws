@@ -29,6 +29,24 @@ const AboutPage = () => {
     <React.Fragment>
       <div className="row-full">
         <div className="header-bg">
+
+        <div className="col-1-of-2">
+            <div className="border-title">
+              <div className="header">
+                  <div className="header__text-box">
+                      <h1 className="heading-primary">
+                          <span className="heading-primary--main">Personal site</span>
+                          <span className="heading-primary--sub">About me and my life</span>
+                      </h1>
+                  </div>
+                  <Table data={Object.keys(data).map((key) => data[key])} />
+                  <h4 className="header__heading">
+                      <span className="header__heading-span header__heading-span--1">Kovtun Sergii</span>
+                  </h4>
+              </div>
+            </div>
+          </div>
+
           <div className="col-1-of-2">
             <div className='about-page'>
               <div className="border-title">
@@ -57,22 +75,7 @@ const AboutPage = () => {
           </div>
           </div>
         </div>
-          <div className="col-1-of-2">
-            <div className="border-title">
-              <div className="header">
-                  <div className="header__text-box">
-                      <h1 className="heading-primary">
-                          <span className="heading-primary--main">Personal site</span>
-                          <span className="heading-primary--sub">About me and my life</span>
-                      </h1>
-                  </div>
-                  <Table data={Object.keys(data).map((key) => data[key])} />
-                  <h4 className="header__heading">
-                      <span className="header__heading-span header__heading-span--1">Kovtun Sergii</span>
-                  </h4>
-              </div>
-            </div>
-          </div>
+        
         </div>
       </div>
         <div className="u-center-text u-margin-bottom-medium">
