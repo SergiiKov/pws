@@ -25,7 +25,7 @@
         }
     
         @include respond(phone) {
-            font-size: 2.5rem;
+            font-size: 2rem;
         } 
     }
     
@@ -38,6 +38,7 @@
 
         @include respond(phone) {
              letter-spacing: .5rem;
+             font-size: 1.6rem;
          }
     }
 }
@@ -69,7 +70,7 @@
     }
 }
 
-.heading-tertiary {
+.heading-tertiary-left {
     padding-left: 2.5rem;
     padding-bottom: .5rem;
     font-size: $default-font-size;
@@ -80,6 +81,20 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
         font-size: 2rem;
+    }
+}
+.heading-tertiary {
+    padding-left: 2.5rem;
+    padding-bottom: .5rem;
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include respond(phone) {
+        padding-left: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
     }
 }
 
