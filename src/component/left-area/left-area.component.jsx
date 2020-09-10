@@ -5,7 +5,7 @@ import photoMy from '../../img/MyPhoto.jpg';
 import cvUa from '../../img/cv_ua.pdf';
 import cvEn from '../../img/cv_en.pdf';
 
-import './left-area.styles.scss'
+// import './left-area.styles.scss'
 import facebook from '../../img/facebook2.svg';
 import github from '../../img/github.svg';
 import linkedin from '../../img/linkedin.svg';
@@ -26,8 +26,8 @@ const LeftArea = () => (
     </div>
  
       <div className="button-container">
-        <div><a className='button-left' href={cvEn} target="_blank">resume</a></div>
-        <div><a className='button-left' href={cvUa} target="_blank">резюме</a></div>
+        <div><a className='button-left' href={cvEn} target="_blank" rel="noopener noreferrer">resume</a></div>
+        <div><a className='button-left' href={cvUa} target="_blank" rel="noopener noreferrer">резюме</a></div>
       </div>
 
       <div className="text-container">
@@ -35,23 +35,23 @@ const LeftArea = () => (
       </div>
       <div className="button-container">
         <div  className=''>
-          <a href='https://github.com/SergiiKov' target="_blank">
+          <a href='https://github.com/SergiiKov'target="_blank" rel="noopener noreferrer">
             <img src={github} alt="mail" className="icon"/>
           </a>
         </div>
         <div className=''>
-          <a href='https://www.linkedin.com/in/sergii-kovtun-1b97881a2/' target="_blank">
+          <a href='https://www.linkedin.com/in/sergii-kovtun-1b97881a2/' target="_blank" rel="noopener noreferrer">
           <img src={linkedin} alt="mail" className="icon"/>
           </a>
     
         </div>
         <div className=''>
-          <a href='https://www.facebook.com/profile.php?id=100017264941501' target="_blank">
+          <a href='https://www.facebook.com/profile.php?id=100017264941501' target="_blank" rel="noopener noreferrer">
           <img src={facebook} alt="mail" className="icon"/>
           </a>
         </div>
       <div className=''>
-        <a href="mailto:sergiikovtun.vn@gmail.com" target="_blank">
+        <a href="mailto:sergiikovtun.vn@gmail.com" target="_blank" rel="noopener noreferrer">
         <img src={envelop} alt="mail" className="icon"/>
         </a>
       </div>

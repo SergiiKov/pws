@@ -12,20 +12,16 @@ import '../component/sass/main.scss';
 
 function App() {
   return (
-  <div>
-    <Header />
-    <div className='container'>
-      <div>
+ <React.Fragment>
+       <Header />
         <Switch>
           <Route exact path='/about' component={AboutPage} />
           <Route path='/resume' component={ResumePage} />
           <Route path='/projects' component={ProjectsPage} />
           <Route path='/contact' component={ContactPage} />
         </Switch>
-      </div>
-    </div>
     <Footer />
-  </div>
+ </React.Fragment>
   );
 }
 
