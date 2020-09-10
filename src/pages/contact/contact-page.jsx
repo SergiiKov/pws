@@ -100,11 +100,11 @@ import LeftArea from  '../../component/left-area/left-area.component';
           id='name' 
           value={name} 
           onChange={(event)=> setName(event.target.value)} required />
-          <label for="name" className="form__label" >Full name</label>
+          <label htmlFor="name" className="form__label" >Full name</label>
         </div>  
-        <div class="form__group">
+        <div className="form__group">
           <input type="email" 
-          class="form__input" 
+          className="form__input" 
           placeholder="Email address" 
           label='Email' 
           id='email' 
@@ -113,7 +113,7 @@ import LeftArea from  '../../component/left-area/left-area.component';
           value={email} 
           onChange={onChange}
           required />
-          <label for="email" class="form__label">Email address</label>
+          <label htmlFor="email" className="form__label">Email address</label>
         </div>
         <div className="form__group">
           <input 
@@ -126,7 +126,7 @@ import LeftArea from  '../../component/left-area/left-area.component';
           helperText={phoneHelper} 
           value={phone} 
           onChange={onChange}  required />
-          <label for="phone" className="form__label">Phone</label>
+          <label htmlFor="phone" className="form__label">Phone</label>
         </div>  
         <div className="form__group">
         <textarea id="textarea" 
@@ -139,8 +139,8 @@ import LeftArea from  '../../component/left-area/left-area.component';
         value={message} 
         onChange={(event)=> setMessage(event.target.value)} />
         </div>  
-        <div class="form__group">
-          <button class="button" onClick={onConfirm}>Send Message</button>
+        <div className="form__group">
+          <button className="button" onClick={onConfirm}>Send Message</button>
         </div>
       </div>
     </div>
