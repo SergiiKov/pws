@@ -2,9 +2,27 @@ import React from 'react';
 import {useState} from 'react';
 import axios from 'axios';
 
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import Snackbar from '@material-ui/core/Snackbar';
+import Button from '@material-ui/core/Button';
+import SendIcon from '@material-ui/icons/Send';
+
 import LeftArea from  '../../component/left-area/left-area.component';
 
+const useStyles = makeStyles((theme) => ({
+  sendButton: {
+    marginTop:'2em',
+    minWidth: '150px'
+  },
+  widthForm:{
+    width:'240px'
+  }
+}));
+
   export default function ContactPage() {
+    const classes = useStyles();
+    const theme= useTheme(); 
 
     const [name, setName] = useState('');
 
@@ -79,7 +97,12 @@ import LeftArea from  '../../component/left-area/left-area.component';
       console.error(err); })
   };
 
- 
+  const buttonContent = (
+    <React.Fragment>
+      <SendIcon fontSize="small" style={{marginRight:'0.5em'}}/>Send Message 
+    </React.Fragment>
+  )
+
     return (
       <React.Fragment>
   <div className="contact-page">
@@ -139,11 +162,30 @@ import LeftArea from  '../../component/left-area/left-area.component';
         onChange={(event)=> setMessage(event.target.value)} />
         </div>  
         <div className="form__group">
-          <button className="button" onClick={onConfirm}>Send Message</button>
+        <Button 
+                    className={classes.sendButton}
+                      variant="contained" color="secondary"
+                      disabled={name.length===0 || message.length===0 || phoneHelper.length !==0 || emailHelper.length !==0 } 
+                      onClick={onConfirm}>{loading ? <CircularProgress size={30}/> : buttonContent}
+        </Button>
+          {/* <button className="button" onClick={onConfirm}>Send Message</button> */}
         </div>
       </div>
     </div>
   </div>
+                    <Snackbar
+                      open={alert.open}
+                      ContentProps={{
+                        style: {
+                          backgroundColor: alert.color,
+                          marginTop:'7rem'
+                        }
+                      }}
+                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                      message={alertMessage}
+                      autoHideDuration={4000}
+                      onClose={() => setAlert(false)}
+                    />
 </div>
       </React.Fragment>   
     );
