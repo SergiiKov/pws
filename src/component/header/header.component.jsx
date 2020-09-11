@@ -16,55 +16,28 @@ import MenuIcon from '@material-ui/icons/Menu';
 import logo from '../../img/logo.png';
 
 const useStyles = makeStyles(theme => ({
-  toolbarMargin: {
-    ...theme.mixins.toolbar,
-    // marginBottom: '0.5em',
-    [theme.breakpoints.down("md")]: {
-      marginBottom: "0.01em"
-    },
-    [theme.breakpoints.down("xs")]: {
-      marginBottom: "0.01em"
-    }
-  },
-  tabContainer: {
-    marginLeft: 'auto'
-  },
-  tab:{
-    ...theme.typography.tab,
-    textTransform: 'uppercase',
-    minWidth:10,
-    marginLeft:'10px',
-    paddingLeft: '20px',
-    paddingRight: '20px',
-    '&:hover': {
-      opacity: 0.9
-    }
-  },
-  button:{
-    marginRight:'20px',
-    marginLeft: '50px',
-  },
-  logoContainer: {
-    padding: 0,
-    marginLeft:'10px',
-    color:'white',
-    fontFamily: 'Roboto',
-            textTransform: 'uppercase',
-            fontWeight: '400',
-            letterSpacing: '0.09em',
-            fontSize:'1.2rem',
-            cursor:'pointer',
-            '&:hover': {
-                color:'#FFBA60'
-              }
-  },
+  // tabContainer: {
+  //   marginLeft: 'auto'
+  // },
+  // tab:{
+  //   ...theme.typography.tab,
+  //   textTransform: 'uppercase',
+  //   minWidth:10,
+  //   marginLeft:'10px',
+  //   paddingLeft: '20px',
+  //   paddingRight: '20px',
+  //   '&:hover': {
+  //     opacity: 0.9
+  //   }
+  // },
   iconButton: {
     marginLeft: 'auto',
     '&:hover': {
       backgroundColor: 'transparent'
     }},
     drawer: {
-     backgroundColor: '#1a237e',
+     backgroundColor: '#29b6f6',
+     marginTop: '50px'
     },
     drawerItem: {
       ...theme.typography.tab,
@@ -178,7 +151,15 @@ export default function Header(checked1, onChange1) {
 
   return(
    <React.Fragment>
-      { matches ? drawer : tabs}
+         <div className='header_nav'>
+    <div className="logo-container">
+    <Link to='/'>
+      <div ><img src={logo} className='logo' alt="Logo" /></div>
+    </Link>
+    </div>
+    { matches ? drawer : tabs}
+    </div>
+      
    </React.Fragment>
     
 
