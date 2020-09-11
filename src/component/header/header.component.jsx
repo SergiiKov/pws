@@ -27,7 +27,10 @@ const useStyles = makeStyles(theme => ({
      marginTop: '50px'
     },
     drawerItem: {
-      ...theme.typography.tab,
+      fontFamily: 'Raleway',
+      textTransform: 'none',
+      fontWeight: '700',
+      fontSize:'2.5rem',
       color: 'white',
       marginTop:'10px',
       opacity: 0.7

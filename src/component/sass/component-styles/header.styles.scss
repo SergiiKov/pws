@@ -13,6 +13,9 @@
     -webkit-clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 90%, 60% 100%, 0 100%);
     clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 90%, 60% 100%, 0 100%);
 }
+@include respond(phone) {
+  clip-path:none;
+}
 
   border-bottom: 3px solid $color-secondary-dark;
   display: flex;

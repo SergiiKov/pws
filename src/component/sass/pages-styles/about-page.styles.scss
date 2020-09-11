@@ -1,10 +1,17 @@
-
-.header-bg{
-    height: 95vh;
-    background-image: linear-gradient(
+.about-page{
+  background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, .7),
         rgba($color-primary-dark, .7));
+        height: auto;
+        width: auto;
+}
+.header-bg{
+    // height: 95vh;
+    // background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba($color-primary-light, .7),
+    //     rgba($color-primary-dark, .7));
         margin-top: -1rem;
 
         @include respond(phone) {
@@ -27,7 +34,7 @@
 
   @include respond(phone) {
     margin: 1rem;
-    clip-path: none;
+    // clip-path: none;
   }
 
   &__text-box {
@@ -89,7 +96,7 @@
 
   @include respond(phone) {
      margin: 1rem;
-    clip-path: none;
+    // clip-path: none;
   }
 }
 

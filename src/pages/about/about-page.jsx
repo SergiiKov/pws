@@ -27,6 +27,7 @@ const AboutPage = () => {
 
   return (
     <React.Fragment>
+       <div className='about-page'>
       <div className="row-full">
         <div className="header-bg">
 
@@ -48,7 +49,7 @@ const AboutPage = () => {
           </div>
 
           <div className="col-1-of-2">
-            <div className='about-page'>
+           
               <div className="border-title">
                 <div className='title'>
                     <h2 className='heading-secondary'>ABOUT THIS SITE</h2>
@@ -73,12 +74,14 @@ const AboutPage = () => {
                   </div>
             </div>
           </div>
-          </div>
+         
         </div>
         
         </div>
       </div>
-        <div className="u-center-text u-margin-bottom-medium">
+      
+</div>
+<div className="u-center-text u-margin-bottom-medium u-margin-top-medium">
                     <h2 className="heading-secondary">
                     Some of my travels
                     </h2>
