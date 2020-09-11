@@ -134,7 +134,6 @@ import LeftArea from  '../../component/left-area/left-area.component';
         name="textarea" 
         placeholder="Enter Message" 
         rows="6" 
-        cols="77"
         id='message' 
         value={message} 
         onChange={(event)=> setMessage(event.target.value)} />

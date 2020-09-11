@@ -16,25 +16,12 @@ import MenuIcon from '@material-ui/icons/Menu';
 import logo from '../../img/logo.png';
 
 const useStyles = makeStyles(theme => ({
-  // tabContainer: {
-  //   marginLeft: 'auto'
-  // },
-  // tab:{
-  //   ...theme.typography.tab,
-  //   textTransform: 'uppercase',
-  //   minWidth:10,
-  //   marginLeft:'10px',
-  //   paddingLeft: '20px',
-  //   paddingRight: '20px',
-  //   '&:hover': {
-  //     opacity: 0.9
-  //   }
-  // },
   iconButton: {
-    marginLeft: 'auto',
+    marginRight:'1rem',
     '&:hover': {
       backgroundColor: 'transparent'
-    }},
+    }
+  },
     drawer: {
      backgroundColor: '#29b6f6',
      marginTop: '50px'
@@ -55,10 +42,8 @@ const useStyles = makeStyles(theme => ({
   },
     appBar: {
       zIndex: theme.zIndex.modal + 1
-    }
-    
+    }  
 }));
-
 
 export default function Header(checked1, onChange1) {
   const theme = useTheme();
@@ -67,9 +52,6 @@ export default function Header(checked1, onChange1) {
   const [openDrawer, setOpenDrawer] = useState(false);
   const classes = useStyles();
   const [value, setValue] = useState(0);
-  const handleChange = (e, value) => {
-    setValue(value);
-  };
 
   const drawer = (
     <React.Fragment>
@@ -159,10 +141,7 @@ export default function Header(checked1, onChange1) {
     </div>
     { matches ? drawer : tabs}
     </div>
-      
    </React.Fragment>
-    
-
   );
 }
 
