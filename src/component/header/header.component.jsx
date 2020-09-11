@@ -89,7 +89,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Header(checked1, onChange1) {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('md'));
+  const matches = useMediaQuery(theme.breakpoints.down('sm'));
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
   const [openDrawer, setOpenDrawer] = useState(false);
   const classes = useStyles();
@@ -112,7 +112,7 @@ export default function Header(checked1, onChange1) {
      
       <List disablePadding>
   
-                  <ListItem divider button selected={value===0} onClick={()=>{setOpenDrawer(false); setValue(0) }} component={Link} to='/cv'  >
+                  <ListItem divider button selected={value===0} onClick={()=>{setOpenDrawer(false); setValue(0) }} component={Link} to='/about'  >
                       <ListItemText className={value === 0 ? [classes.drawerItem, classes.drawerItemSelected] : classes.drawerItem}>
                       About
                       </ListItemText>
@@ -132,13 +132,8 @@ export default function Header(checked1, onChange1) {
                       Contact
                       </ListItemText>
                   </ListItem>
-                  <ListItem divider button component={Link} to='/' selected={value===4}  onClick={()=>{setOpenDrawer(false); setValue(4) }} >
-                      <ListItemText className={value === 4 ? [classes.drawerItem, classes.drawerItemSelected] : classes.drawerItem}>
-                      Kovtun Sergii
-                      </ListItemText>  
-                  </ListItem>
               </List>    
-          <Button variant="contained" color="secondary" className={classes.drawerButton} href='https://github.com/SergiiKov/cv'>Sourse</Button>
+          <Button variant="contained" color="secondary" className={classes.drawerButton} href='https://github.com/SergiiKov/pws'>Sourse</Button>
       </SwipeableDrawer>
         <IconButton onClick={()=>setOpenDrawer(!openDrawer)} className={classes.iconButton}>
             <MenuIcon />
@@ -153,9 +148,7 @@ export default function Header(checked1, onChange1) {
     <Link to='/'>
       <div ><img src={logo} className='logo' alt="Logo" /></div>
     </Link>
-
     </div>
-
     <div className='nav'>
     <div className="nav__item">
       <Link className='nav__link' to='/about'>
