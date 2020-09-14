@@ -10,9 +10,10 @@ import Footer from '../component/footer/footer.component';
 
 import '../component/sass/main.scss';
 
-function App() {
+const App = () => {
   return (
  <React.Fragment>
+
        <Header />
         <Switch>
           <Route exact path='/about' component={AboutPage} />
@@ -26,3 +27,5 @@ function App() {
 }
 
 export default App;
+
+

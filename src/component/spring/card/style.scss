@@ -1,0 +1,29 @@
+@import '../../sass/variables';
+
+
+.card_spring {
+    // width: 65ch;
+    // height: 65ch;
+    // background: grey;
+    cursor: pointer;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+
+    color: $color-white;
+    margin: 2rem;
+    padding: 2rem;
+
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-dark, 1),
+      rgba($color-primary-light, 1));
+
+  }
+  
+  .card_spring:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }

@@ -88,11 +88,11 @@
     margin: 2rem;
     border: 1px solid $color-white;
 
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-      -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
-      clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
-      height: auto;
-  }
+  // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  //     -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
+  //     clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+  //     height: auto;
+  // }
 
   @include respond(phone) {
      margin: 1rem;

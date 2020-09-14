@@ -3,6 +3,7 @@ import React, { useState, useEffect }  from 'react';
 import Table from '../../component/table/Table';
 import personalData from '../../component/data/stats';
 import Card from '../../component/card/card-component';
+import CardSpring from '../../component/spring/card/card';
 
 const AboutPage = () => {
  
@@ -51,7 +52,7 @@ const AboutPage = () => {
           <div className="col-1-of-2">
            
               <div className="border-title">
-                <div className='title'>
+                {/* <div className='title'>
                     <h2 className='heading-secondary'>ABOUT THIS SITE</h2>
                     <h3 className='heading-tertiary' >A beautiful, responsive, React app written with modern JavaScript and React components.</h3>
                   <div className='body'>
@@ -60,7 +61,8 @@ const AboutPage = () => {
                       This is react website created to introduce me and my skills in web development (and my skills in english).
                     </p>
                   </div>
-                </div>
+                </div> */}
+                <CardSpring />
               </div>
           <div className="border-title">
             <div className='title'>
@@ -87,6 +89,7 @@ const AboutPage = () => {
                     </h2>
         </div>
   <Card />
+  
     </React.Fragment>
  )
       
