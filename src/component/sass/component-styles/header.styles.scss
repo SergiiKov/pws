@@ -4,6 +4,11 @@
   width: 100%;
   position: fixed;
   top:0;
+  border-bottom: 3px solid $color-secondary-dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2000;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-primary-light, 1),
@@ -13,15 +18,9 @@
     -webkit-clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 90%, 60% 100%, 0 100%);
     clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 90%, 60% 100%, 0 100%);
 }
-@include respond(phone) {
-  clip-path:none;
-}
-
-  border-bottom: 3px solid $color-secondary-dark;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2000;
+  @include respond(phone) {
+    clip-path:none;
+  }
 }
 
 .nav {
@@ -75,6 +74,9 @@
 
       display: flex;
       align-items: center;
+      @include respond(phone) {
+        padding: 1rem 2rem;
+      }
   }
 }
 
@@ -87,4 +89,70 @@
 .logo {
   height: 5rem; 
   box-shadow: 0 .2rem .2rem rgba($color-black, .4);
+}
+
+
+/* Position and sizing of burger button */
+// .bm-burger-button {
+//   display: none;
+// }
+
+/* Color/shape of burger icon bars */
+// .bm-burger-bars {
+//   display: none;
+// }
+
+/* Position and sizing of clickable cross button */
+// .bm-cross-button {
+//   display: none;
+// }
+
+/* Color/shape of close button cross */
+.bm-cross {
+  display: none;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: _palette(bg);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: _palette(fg-bold);
+  padding: 0.8em;
+  font-family: "Raleway", Helvetica, sans-serif;
+}
+
+#header .index-link {
+  z-index: 3;
+}
+
+#header .main .close-menu {
+  border: 0;
+  z-index: 10000;
+}
+
+#header .main .open-menu {
+  border: 0;
+}
+
+.open-menu{
+position: fixed;
+right: 0;
+border: none;
+}
+
+.close-menu{
+position: fixed;
+right: 0;
+z-index: 3;
+border-left: 0;
+}
+
+.hamburger-container  {
+display: block;
+position: relative;
 }

@@ -12,8 +12,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import Hamburger from '../burger-menu/burger-menu';
 
+import Hamburger from "../burger-menu/burger-menu";
 
 import logo from '../../img/logo.png';
 
@@ -146,8 +146,9 @@ export default function Header(checked1, onChange1) {
     </div>
 
     { matches ? <Hamburger /> : tabs}
+  
     </div>
-    {/* <Hamburger /> */}
+
    </React.Fragment>
   );
 }
