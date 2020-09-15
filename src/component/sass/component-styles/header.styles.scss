@@ -143,12 +143,14 @@ li{
 .open-menu{
 position: fixed;
 right: 0;
+top: 10px;
 border: none;
 }
 
 .close-menu{
 position: fixed;
 right: 0;
+top: 10px;
 z-index: 9999;
 border-left: 0;
 }
@@ -165,4 +167,13 @@ position: relative;
     to right bottom,
     rgba($color-primary-dark, 1),
     rgba($color-primary-light, 1)); 
+}
+
+.menu{
+  color: $color-secondary-dark;
+  text-align: center;
+  // background-color: red;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
 }
