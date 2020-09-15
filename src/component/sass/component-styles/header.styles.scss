@@ -1,4 +1,6 @@
-
+li{
+  list-style: none;
+}
 .header_nav {
   height: 7rem;
   width: 100%;
@@ -114,17 +116,16 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: _palette(bg);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Wrapper for item list */
-.bm-item-list {
-  color: _palette(fg-bold);
-  padding: 0.8em;
-  font-family: "Raleway", Helvetica, sans-serif;
-}
+// .bm-item-list {
+//   color: red;
+//   padding: 0.8em;
+//   font-family: "Raleway", Helvetica, sans-serif;
+// }
 
 #header .index-link {
   z-index: 3;
@@ -148,11 +149,20 @@ border: none;
 .close-menu{
 position: fixed;
 right: 0;
-z-index: 3;
+z-index: 9999;
 border-left: 0;
 }
 
 .hamburger-container  {
 display: block;
 position: relative;
+}
+
+
+.hamburger-ul{
+  margin-top: 1rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-dark, 1),
+    rgba($color-primary-light, 1)); 
 }
