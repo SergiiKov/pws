@@ -26,7 +26,7 @@ const Hamburger = () => {
       <Menu right isOpen={open}>
         <ul className="hamburger-ul">
           {routes.map((l) => (
-            <li key={l.label}>
+            <li key={l.label} className="hamburger-li">
               <Link className='nav__link' to={l.path} onClick={() => setOpen(!open)}>
                 <h3 className={l.index && 'index-li'}>{l.label}</h3>
               </Link>

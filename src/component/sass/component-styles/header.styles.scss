@@ -160,8 +160,8 @@ display: block;
 position: relative;
 }
 
-
 .hamburger-ul{
+  padding: 2rem 1rem;
   margin-top: 1rem;
   background-image: linear-gradient(
     to right bottom,
@@ -169,8 +169,14 @@ position: relative;
     rgba($color-primary-light, 1)); 
 }
 
+.hamburger-li{
+  font-size: 1.6rem;
+  // text-align: center;
+  // border-bottom: 1px solid $color-grey-light-2;
+}
+
 .menu{
-  color: $color-secondary-dark;
+  color: $color-secondary-light;
   text-align: center;
   // background-color: red;
   font-size: 2rem;
