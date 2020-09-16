@@ -1,9 +1,9 @@
 const data = [
-    {
-      path: '/about',
-      label: 'Kovtun Sergii',
-      index: true,
-    },
+    // {
+    //   path: '/about',
+    //   label: 'Kovtun Sergii',
+    //   index: true,
+    // },
     {
       path: '/about',
       label: 'About',
