@@ -32,7 +32,6 @@ const Hamburger = () => {
               </Link>
             </li>
           ))}
-         
         </ul>
       </Menu>
     </div>
