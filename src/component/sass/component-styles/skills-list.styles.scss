@@ -7,16 +7,14 @@
     grid-gap: 10px;
   }
 
-  @media (max-width: 767px) {
-  
+  @include respond(tab-port) {
     .skills-list {
       grid-template-columns: 1fr;
     }
-  }
+}
 
-  @media (max-width: 1360px) {
-  
-    .skills-list {
-      grid-template-columns: 1fr 1fr;
-    }
+@include respond(tab-land) {
+  .skills-list {
+    grid-template-columns: 1fr 1fr;
   }
+}

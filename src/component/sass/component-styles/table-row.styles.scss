@@ -31,4 +31,10 @@
         top: 10%;
         left: 70%;
     }
+    @include respond(tab-port) {
+      clip-path:none;
+      top: 10%;
+      left: 70%;
+  }
+
 }

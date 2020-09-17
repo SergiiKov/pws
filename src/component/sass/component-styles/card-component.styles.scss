@@ -171,6 +171,9 @@
                 @include respond(phone) {
                     clip-path:none;
                 }
+                @include respond(tab-port) {
+                    clip-path:none;
+                }
             }
         }
     

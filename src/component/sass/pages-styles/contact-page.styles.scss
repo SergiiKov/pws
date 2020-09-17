@@ -20,6 +20,9 @@
         @include respond(phone) {
             margin-right: 0;
           }
+        @include respond(tab-port) {
+            margin-right: 0;
+          }
 }
 
 .form {
