@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import Menu from 'react-burger-menu/lib/menus/slide';
+
+import Button from '../button/button.component';
 
 import routes from '../data/routes';
 
@@ -23,7 +24,8 @@ const Hamburger = () => {
           )}
         </ul>
       </nav>
-      <Menu right isOpen={open}>
+      <Menu right isOpen={open} >
+        <div className='drawer-container'>
         <ul className="hamburger-ul">
           {routes.map((l) => (
             <li key={l.label} className="hamburger-li">
@@ -33,6 +35,8 @@ const Hamburger = () => {
             </li>
           ))}
         </ul>
+    <Button />
+        </div>
       </Menu>
     </div>
   );

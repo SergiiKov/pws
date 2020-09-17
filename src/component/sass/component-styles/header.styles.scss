@@ -140,12 +140,14 @@ position: relative;
 }
 
 .hamburger-ul{
+  // height: 70vh;
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   rgba($color-primary-dark, 1),
+  //   rgba($color-primary-light, 1)); 
   padding: 2rem 1rem;
   margin-top: 1.5rem;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba($color-primary-dark, 1),
-    rgba($color-primary-light, 1)); 
+
 }
 
 .hamburger-li{
@@ -157,4 +159,12 @@ position: relative;
   text-align: center;
   font-size: 2.5rem;
   padding: 1rem 3rem;
+}
+
+.drawer-container{
+  height: 70vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-dark, 1),
+    rgba($color-primary-light, 1)); 
 }
