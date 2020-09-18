@@ -23,6 +23,9 @@
         @include respond(tab-port) {
             margin-right: 0;
           }
+          @include respond(tab-land) {
+            min-height: auto;
+          }
 }
 
 .form {

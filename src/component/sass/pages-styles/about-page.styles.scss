@@ -123,5 +123,8 @@
   margin: 1rem;
   clip-path: none;
   }
+  @include respond(tab-land) {
+    padding: 4rem 1rem;
+  }
 }
 }
