@@ -1,5 +1,14 @@
 
 .tablebox-box {
+  cursor: pointer;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+
+
   animation-name: opacity;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -11,8 +20,9 @@
     padding: 1rem 0rem 1rem 1rem;
     font-size: 1.3rem;
     position: absolute;
-    top: 9%;
-    left: 81%;
+     left: 33vw;
+     top: 10vh;
+ 
     transform: translate(-50%, -50%);
     text-align: start;
     background-image: linear-gradient(
@@ -20,21 +30,35 @@
       rgba($color-grey-light-1, 0.3),
       rgba($color-grey-light-2, 0.3));
 
-      @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 70%, 70% 100%, 0 100%);
-        clip-path: polygon(0% 10%, 0% 0%, 100% 0%, 100% 90%, 90% 100%, 10% 100%, 0% 90%);
-        height: auto;
-      }
+      // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      //   -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 70%, 70% 100%, 0 100%);
+      //   clip-path: polygon(0% 10%, 0% 0%, 100% 0%, 100% 90%, 90% 100%, 10% 100%, 0% 90%);
+      //   height: auto;
+      // }
 
-      @include respond(phone) {
-        clip-path:none;
-        top: 10%;
-        left: 70%;
-    }
+    //   @include respond(phone) {
+    //     clip-path:none;
+    //     top: 6%;
+    //     left: 80%;
+    // }
     @include respond(tab-port) {
       clip-path:none;
-      top: 10%;
+      top: 65vh;
       left: 70%;
+
+      width: 20rem;
+      padding: .5rem 0rem .5rem .5rem;
+      font-size: 1rem;
   }
 
+  @include respond(tab-land) {
+    clip-path:none;
+    top: 10vh;
+    left:60vw;
+
+}
+
+}
+.tablebox-box:hover {
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.4);
 }

@@ -6,7 +6,7 @@ import './style.scss'
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 30, 1.05]
 const trans = (x, y, s) => `perspective(1200px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
-export default  function CardSpring() {
+export default  function CardSpring2() {
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 210, friction: 20 } }))
   return (
       <React.Fragment>
@@ -15,15 +15,14 @@ export default  function CardSpring() {
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}>
                  
-                    <h2 className='heading-secondary'>ABOUT THIS SITE</h2>
-                    <h3 className='heading-tertiary' >A beautiful, responsive, React app written with modern JavaScript and React components.</h3>
+                 <h2 className='heading-secondary'>ABOUT ME</h2>
                   <div className='body'>
                     <p className='paragraph'>
-                      Welcome to my website. Please read more about me, or you can check out my resume, my projects, or contact me.
-                      This is react website created to introduce me and my skills in web development (and my skills in english).
+                      Hi, I'm Kovtun Sergii a software engineer with over four years IT industry experience, 
+                      that wants to evolve in the field of web development. 
+                      I want to try something new and ready to work hard to learn it.
                     </p>
-                  </div>
-              
+                  </div> 
       </animated.div>
       </React.Fragment>
 
