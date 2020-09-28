@@ -6,6 +6,7 @@
         height: auto;
         width: auto;
 }
+
 .header-bg{
         margin-top: -1rem;
 
@@ -17,8 +18,8 @@
         }
 
 .header {
-    position: relative;
-    margin: 2rem;
+  position: relative;
+  margin: 2rem;
   background-image: 
   url(../../../img/my.jpg);
   background-size: cover;
@@ -53,7 +54,7 @@
             -webkit-clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 85%, 85% 100%, 0 100%);
             clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 90% 100%, 0 100%); 
         }
-        @include respond(phone) {
+      @include respond(phone) {
          clip-path: none;
        }
        @include respond(tab-port) {
@@ -63,9 +64,8 @@
       }
       @include respond(big-desktop) {
         top: 38vh;
-      left: 26vw;
-      }
-     
+        left: 26vw;
+      }   
   }
 
   &__heading {
@@ -75,11 +75,10 @@
     text-align: left;
     color: $color-white;
     position: absolute;
-    top: 45rem;
+    top: 71vh;
     right: 0rem;
     width: 100%;
     
-
     &-span {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;

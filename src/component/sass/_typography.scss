@@ -8,13 +8,14 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $color-white;
     backface-visibility: hidden;
-    text-transform: uppercase;
+  
 
     &--main {
         display: block;
         font-size: 3rem;
         font-weight: 600;
         letter-spacing: 2.8rem;
+        text-transform: uppercase;
     
         animation-name: moveInLeft;
         animation-duration: 1s;

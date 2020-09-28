@@ -39,7 +39,7 @@ const AboutPage = () => {
                   <div className="header__text-box">
                       <h1 className="heading-primary">
                           <span className="heading-primary--main">Personal site</span>
-                          <span className="heading-primary--sub">About me and my life</span>
+                          <span className="heading-primary--sub">About me and My life</span>
                       </h1>
                   </div>
                   <Table data={Object.keys(data).map((key) => data[key])} />

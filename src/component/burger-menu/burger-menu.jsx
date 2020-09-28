@@ -35,7 +35,6 @@ const Hamburger = () => {
             </li>
           ))}
         </ul>
-    <Button />
         </div>
       </Menu>
     </div>

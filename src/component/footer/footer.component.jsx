@@ -36,8 +36,7 @@ const Footer = () => (
 </div>
         <div className="col-1-of-3">
             <p className="footer__copyright">
-                Built by <a href="#" className="footer__link">Kovtun Sergii</a> for introduce himself.
-                Copyright &copy; by Kovtun Sergii.
+                Built by <a href="#" className="footer__link">Kovtun Sergii</a> for introduce himself. 2020
             </p>
         </div>
     </div>
