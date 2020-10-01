@@ -35,7 +35,7 @@
             border: none;
             color: $color-white;
             background-color: $color-secondary-light;
-            box-shadow: 0 1rem 1rem rgba($color-black,.4);
+            box-shadow: 0 .5rem .5rem rgba($color-black,.4);
             @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
                 -webkit-clip-path: none;
                 clip-path: none;
@@ -46,8 +46,8 @@
         &:focus {
             border: none;
             outline: none;
-            color: $color-tertiary-dark;
-            box-shadow: 0 .5rem 1rem rgba($color-black,.4);
+            color: $color-white;
+            box-shadow: 0 .3rem .3rem rgba($color-black,.4);
             background-color: $color-secondary-light;
             @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
                 -webkit-clip-path: none;

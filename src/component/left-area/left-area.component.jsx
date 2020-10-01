@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import Button from '../button/button.component';
 import photoMy from '../../img/MyPhoto.jpg'; 
 import cvUa from '../../img/cv_ua.pdf';
 import cvEn from '../../img/cv_en.pdf';
