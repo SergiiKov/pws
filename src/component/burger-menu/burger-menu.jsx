@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Menu from 'react-burger-menu/lib/menus/slide';
 
-import Button from '../button/button.component';
+// import Button from '../button/button.component';
 
 import routes from '../data/routes';
 

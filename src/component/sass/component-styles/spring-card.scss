@@ -1,5 +1,3 @@
-@import '../../sass/variables';
-@import '../../sass/mixins';
 
 .card_spring {
     cursor: pointer;
@@ -11,7 +9,7 @@
     will-change: transform;
 
     color: $color-white;
-    margin: 2rem;
+    margin: 1.5rem;
     padding: 2rem;
 
     background-image: linear-gradient(

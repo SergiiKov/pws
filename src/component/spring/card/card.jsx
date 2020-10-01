@@ -1,9 +1,7 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
 
-import './style.scss'
-
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 40, 1.05]
+const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 40, 1.04]
 const trans = (x, y, s) => `perspective(1200px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 export default  function CardSpring() {

@@ -17,13 +17,13 @@ export default function Header(checked1, onChange1) {
     <React.Fragment>
       <div className='header_nav'>
         <div className="logo-container">
-        <Link to='/test'>
+        <Link to='/'>
           <div ><img src={logo} className='logo' alt="Logo" /></div>
         </Link>
         </div>
           <div className='nav'>
             <div className="nav__item">
-              <Link className='nav__link' to='/about'>
+              <Link className='nav__link' to='/'>
                 About
               </Link>
               </div>

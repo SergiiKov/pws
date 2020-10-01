@@ -1,11 +1,6 @@
 const data = [
-    // {
-    //   path: '/about',
-    //   label: 'Kovtun Sergii',
-    //   index: true,
-    // },
     {
-      path: '/about',
+      path: '/',
       label: 'About',
     },
     {
