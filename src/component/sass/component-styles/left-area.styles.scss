@@ -1,4 +1,3 @@
-
 .left-area{
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -166,10 +165,10 @@
     display: flex;
     justify-content: center;
 }
-@include respond(tab-port) {
-  display: flex;
-  justify-content: center;
-}
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
   .left-img-name {
@@ -210,16 +209,16 @@
     backface-visibility: hidden;
     box-shadow: 0 1rem 2rem rgba($color-black,.4);
 }
-@include respond(tab-land) {
-  height: 30vmin;
-  border-radius: 50%;
-  margin: 1rem;
-  backface-visibility: hidden;
-  box-shadow: 0 1rem 2rem rgba($color-black,.4);
-}
-@include respond(big-desktop) {
-  height: 25vmin;
-}
+  @include respond(tab-land) {
+    height: 30vmin;
+    border-radius: 50%;
+    margin: 1rem;
+    backface-visibility: hidden;
+    box-shadow: 0 1rem 2rem rgba($color-black,.4);
+  }
+  @include respond(big-desktop) {
+    height: 25vmin;
+  }
 }
 
 .left-img-container:hover .left-img-name {

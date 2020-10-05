@@ -159,6 +159,7 @@ const Card = () => {
     </div>
 </div> 
 </div>
+
     </React.Fragment>
  )    
 };

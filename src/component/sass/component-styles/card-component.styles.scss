@@ -198,7 +198,7 @@
 }
 
 .gallery {
-    position: relative;
+    // position: relative;
     cursor: pointer;
     display: grid;
     grid-template: repeat(4, 8vw) / repeat(4, 1fr);
@@ -242,5 +242,22 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        transition: all .5s;
+       
+        &:hover{
+            box-shadow: 0 .3rem .3rem rgba($color-white,.4);
+        }
+
+        &:active{
+            height: 50vh;
+            width: 100%;
+            position: fixed;
+            top: 20%;
+            left: 0;
+            z-index: 9999;
+            opacity: 1;
+            transition: all .3s;
+        }
+
     }
 }
