@@ -9,8 +9,6 @@ import ContactPage from '../pages/contact/contact-page';
 import Footer from '../component/footer/footer.component';
 import '../component/sass/main.scss';
 
-// import Contact2 from '../pages/contact/contact-page2';
-import Contact3 from '../pages/contact/contact-page3';
 
 const App = () => {
   return (
@@ -21,7 +19,7 @@ const App = () => {
           <Route exact path='/' component={AboutPage} />
           <Route path='/resume' component={ResumePage} />
           <Route path='/projects' component={ProjectsPage} />
-          <Route path='/contact' component={Contact3} />
+          <Route path='/contact' component={ContactPage} />
         </Switch>
     <Footer />
     

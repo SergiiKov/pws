@@ -24,7 +24,6 @@
 
         &--back {
             transform: rotateY(180deg);
-
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
@@ -148,6 +147,7 @@
         transform: translate(-50%, -50%);
         width: 98%;
         text-align: center;
+
     }
 
     //@include respond(tab-port) {
@@ -235,6 +235,7 @@
             grid-row: 4 / span 1 ;
             grid-column: 1 / span 2
          }
+
     }
 
     &__img {
@@ -243,21 +244,5 @@
         object-fit: cover;
         display: block;
         transition: all .5s;
-       
-        &:hover{
-            box-shadow: 0 .3rem .3rem rgba($color-white,.4);
-        }
-
-        &:active{
-            height: 50vh;
-            width: 100%;
-            position: fixed;
-            top: 20%;
-            left: 0;
-            z-index: 9999;
-            opacity: 1;
-            transition: all .3s;
-        }
-
     }
 }

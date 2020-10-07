@@ -29,8 +29,17 @@
       to right bottom,
       rgba($color-grey-light-1, 0.3),
       rgba($color-grey-light-2, 0.3));
-
-  
+      
+      @include respond(big-desktop) {
+        top: 6vh;
+        left:36vw;
+      }
+      @include respond(tab-land) {
+        clip-path:none;
+        top: 10vh;
+        left:60vw;
+    
+    }
     @include respond(tab-port) {
       clip-path:none;
       top: 65vh;
@@ -41,12 +50,7 @@
       font-size: 1rem;
   }
 
-  @include respond(tab-land) {
-    clip-path:none;
-    top: 10vh;
-    left:60vw;
 
-}
 
 }
 .tablebox-box:hover {
