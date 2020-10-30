@@ -6,11 +6,20 @@ import personalData from '../../component/data/stats';
 import Card from '../../component/card/card-component';
 import CardSpring from '../../component/spring/card/card';
 import CardSpring2 from '../../component/spring/card/card2';
+import { render } from 'react-dom';
 
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 80, (x - window.innerWidth / 2) / 60, 1]
-const trans = (x, y, s) => `perspective(1200px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+// const calc = (x, y) => [-(y - window.innerHeight / 2) / 80, (x - window.innerWidth / 2) / 60, 1]
+// const trans = (x, y, s) => `perspective(1200px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const AboutPage = () => {
+
+  const [flipped, set1] = useState(false)
+  const { transform, opacity } = useSpring({
+    opacity: flipped ? 1 : 0,
+    transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+    config: { mass: 5, tension: 500, friction: 80 }
+  })
+
  
   const [data, setData] = useState(personalData);
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 210, friction: 20 } }))
@@ -48,15 +57,27 @@ const AboutPage = () => {
                   </div>
                   <Table data={Object.keys(data).map((key) => data[key])} />
                  
-                  <animated.div
+                  {/* <animated.div
                       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
                       onMouseLeave={() => set({ xys: [0, 0, 1] })}
                       style={{ transform: props.xys.interpolate(trans) }}>
                   <h4 className="header__heading">
                       <span className="header__heading-span header__heading-span--1">Kovtun Sergii</span>
                   </h4>
-                  </animated.div>
+                  </animated.div> */}
 
+                  <div onClick={() => set1(state => !state)}>
+                      <animated.div style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>
+                      <h4 className="header__heading">
+                          <span className="header__heading-span header__heading-span--1">Kovtun Sergii</span>
+                      </h4>
+                      </animated.div>
+                      <animated.div style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
+                      <h4 className="header__heading">
+                                          <span className="header__heading-span header__heading-span--1">Hello!</span>
+                                      </h4>
+                      </animated.div>
+                  </div>
               </div>
             </div>
           </div>
@@ -73,12 +94,13 @@ const AboutPage = () => {
         </div>
       </div> 
 </div>
-    <div className="u-center-text u-margin-bottom-medium u-margin-top-medium">
+
+    {/* <div className="u-center-text u-margin-bottom-medium u-margin-top-medium">
       <h2 className="heading-secondary">
         Some of my travels
       </h2>
     </div>
-  <Card />
+  <Card /> */}
 </React.Fragment>
  )
       
