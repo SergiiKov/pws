@@ -93,82 +93,82 @@ import LeftArea from  '../../component/left-area/left-area.component';
     return (
       <React.Fragment>
   <div className="contact-page">
-  <div className="row-full">
-    <div className="col-1-of-3">
-      <LeftArea />
+    <div className="row-full">
+      <div className="col-1-of-3">
+        <LeftArea />
+      </div>
+      <div className="col-2-of-3">
+      <div className='title u-margin-bottom-small'>
+      <h2 className='heading-secondary'>MY CONTACT</h2>
     </div>
-    <div className="col-2-of-3">
-    <div className='title u-margin-bottom-small'>
-    <h2 className='heading-secondary'>MY CONTACT</h2>
-  </div>
-      <div className="form-container">
-        <div className="form__group">
-          <input type="text" 
-          className="form__input" 
-          placeholder="Name" 
-          label='Name'
-          id='name' 
-          value={name} 
-          onChange={(event)=> setName(event.target.value)} required />
-          <label htmlFor="name" className="form__label" >Full name</label>
-        </div>  
-        <div className="form__group">
-          <input type="email" 
-          className="form__input" 
-          placeholder="Email address" 
-          label='Email' 
-          id='email' 
-          error={emailHelper.length !==0} 
-          helperText={emailHelper} 
-          value={email} 
-          onChange={onChange}
-          required />
-          <label htmlFor="email" className="form__label">Email address</label>
-        </div>
-        <div className="form__group">
-          <input 
-          type="text" 
-          className="form__input" 
-          placeholder="Phone"
-          label='Phone' 
-          id='phone' 
-          error={phoneHelper.length !==0} 
-          helperText={phoneHelper} 
-          value={phone} 
-          onChange={onChange}  required />
-          <label htmlFor="phone" className="form__label">Phone</label>
-        </div>  
-        <div className="form__group">
-        <textarea id="textarea" 
-        className='text_area'
-        name="textarea" 
-        placeholder="Enter Message" 
-        rows="6" 
-        id='message' 
-        value={message} 
-        onChange={(event)=> setMessage(event.target.value)} />
-        </div>  
-        <div className="form__group">
-          <button className="button"  
-           onClick={onConfirm}>{loading ? <CircularProgress size={20}/> : buttonContent}
-          </button>
+        <div className="form-container">
+          <div className="form__group">
+            <input type="text" 
+            className="form__input" 
+            placeholder="Name" 
+            label='Name'
+            id='name' 
+            value={name} 
+            onChange={(event)=> setName(event.target.value)} required />
+            <label htmlFor="name" className="form__label" >Full name</label>
+          </div>  
+          <div className="form__group">
+            <input type="email" 
+            className="form__input" 
+            placeholder="Email address" 
+            label='Email' 
+            id='email' 
+            error={emailHelper.length !==0} 
+            helperText={emailHelper} 
+            value={email} 
+            onChange={onChange}
+            required />
+            <label htmlFor="email" className="form__label">Email address</label>
+          </div>
+          <div className="form__group">
+            <input 
+            type="text" 
+            className="form__input" 
+            placeholder="Phone"
+            label='Phone' 
+            id='phone' 
+            error={phoneHelper.length !==0} 
+            helperText={phoneHelper} 
+            value={phone} 
+            onChange={onChange}  required />
+            <label htmlFor="phone" className="form__label">Phone</label>
+          </div>  
+          <div className="form__group">
+          <textarea id="textarea" 
+          className='text_area'
+          name="textarea" 
+          placeholder="Enter Message" 
+          rows="6" 
+          id='message' 
+          value={message} 
+          onChange={(event)=> setMessage(event.target.value)} />
+          </div>  
+          <div className="form__group">
+            <button className="button"  
+            onClick={onConfirm}>{loading ? <CircularProgress size={20}/> : buttonContent}
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-                    <Snackbar
-                      open={alert.open}
-                      ContentProps={{
-                        style: {
-                          backgroundColor: alert.color,
-                          marginTop:'7rem'
-                        }
-                      }}
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      message={alertMessage}
-                      autoHideDuration={4000}
-                      onClose={() => setAlert(false)}
-                    />
+        <Snackbar
+          open={alert.open}
+          ContentProps={{
+          style: {
+          backgroundColor: alert.color,
+          marginTop:'7rem'
+          }
+          }}
+          anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+          message={alertMessage}
+          autoHideDuration={4000}
+          onClose={() => setAlert(false)}
+          />
 </div>
       </React.Fragment>   
     );

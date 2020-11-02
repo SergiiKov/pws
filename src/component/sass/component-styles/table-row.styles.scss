@@ -1,4 +1,3 @@
-
 .tablebox-box {
   cursor: pointer;
   border-radius: 5px;
@@ -49,10 +48,12 @@
       padding: .5rem 0rem .5rem .5rem;
       font-size: 1rem;
   }
-
-
-
 }
+
 .tablebox-box:hover {
   box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.4);
+}
+
+.d-link:hover{
+color: $color-tertiary-dark;
 }

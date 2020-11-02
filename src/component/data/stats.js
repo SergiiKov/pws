@@ -10,7 +10,8 @@ const data = {
       },
     status: {
       label: 'Marital status',
-      value: 0
+      value: 0,
+      link: 'https://sergii-kov.herokuapp.com/contact'
     }
   };
   

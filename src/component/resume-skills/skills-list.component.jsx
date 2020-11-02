@@ -4,7 +4,7 @@ import SkillCard from './skill-card.component';
 const SkillsList = ({ state: { skills, displayCategory } }) => {
   return(
   
-        <div className='skills-list'>
+  <div className='skills-list'>
      {skills
        .filter(
          ({ category }) =>
@@ -21,7 +21,6 @@ const SkillsList = ({ state: { skills, displayCategory } }) => {
         />
      ))}
   </div>
-    
   )
 }
 
